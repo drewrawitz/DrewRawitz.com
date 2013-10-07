@@ -70,8 +70,8 @@
 						<img src="assets/images/drew_photo.jpg" class="pull-right photo photo-rounded">
 					</div>
 					<div class="span9">
-						<p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work for <a href="http://www.autoshopsolutions.com" class="link" target="_blank" rel="nofollow">Autoshop Solutions</a>, a full-service Internet Marketing company focused on the Automotive Industry.</p>
-						<p>My job involves doing what I love, <strong>developing</strong> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="" class="link">resume</a>.</p>
+						<p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work for <a href="http://www.atlanticbt.com" class="link" target="_blank" rel="nofollow">Atlantic BT</a>, Raleigh's Largest Website &amp; Software Development Company.</p>
+						<p>My job involves doing what I love, <strong>developing</strong> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="#" class="link">resume</a>.</p>
 					</div>
 				</div>
 				<p class="center">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
