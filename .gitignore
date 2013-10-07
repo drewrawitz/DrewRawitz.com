@@ -1,2 +1,3 @@
 config.rb
 includes/forms/contact_form.php
+.sass-cache/*

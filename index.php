@@ -43,10 +43,11 @@
 		</div>
 		<footer>
 			<ul class="social_icons">
-				<li><a href="http://www.twitter.com/DrewRawitz" class="twitter_icon" rel="me" target="_blank"><i class="icon-twitter"></i></a></li>
-				<li><a href="https://plus.google.com/u/0/114020475716738327090/posts" class="google_icon" rel="me" target="_blank"><i class="icon-googleplus"></i></a></li>
-				<li><a href="http://stackoverflow.com/users/799653/drew" class="stackoverflow_icon" rel="me" target="_blank"><i class="icon-stackoverflow"></i></a></li>
-				<li><a href="http://www.linkedin.com/pub/drew-rawitz/78/97b/2b7" class="linkedin_icon" target="_blank"><i class="icon-linkedin"></i></a></li>
+				<li><a href="http://www.twitter.com/DrewRawitz" rel="me" target="_blank"><i class="icon-twitter"></i></a></li>
+				<li><a href="http://www.github.com/drewrawitz" rel="me" target="_blank"><i class="icon-github-circled"></i></a></li>
+				<li><a href="https://plus.google.com/u/0/114020475716738327090/posts" rel="me" target="_blank"><i class="icon-gplus"></i></a></li>
+				<li><a href="http://stackoverflow.com/users/799653/drew" rel="me" target="_blank"><i class="icon-stackoverflow"></i></a></li>
+				<li><a href="http://www.linkedin.com/pub/drew-rawitz/78/97b/2b7" target="_blank"><i class="icon-linkedin"></i></a></li>
 			</ul>
 			<p>Copyright &copy; <?=date("Y");?> DrewRawitz.com.<br>All Rights Reserved.</p>
 		</footer>

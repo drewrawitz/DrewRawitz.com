@@ -242,37 +242,6 @@ blockquote {
 	margin: 0 auto 40px auto;
 }
 
-.media-title, .media-genre, .media-rating {
-	text-align: center;
-}
-
-.media-image {
-	margin-bottom: 10px;
-
-	img {
-		width: 185px;
-	}
-}
-
-.media-title {
-	color: #000;
-	line-height: 13px;
-	font-size: 16px;
-}
-.media-genre {
-	color: #bbb;
-}
-
-.media-rating {
-	font-size: 12px;
-
-	.progress {
-		background: #e5e5e5;
-		font-style: italic;
-		padding: 0 7px;
-	}
-}
-
 .sidebar {
 	width: $sidebar-width;
 	min-height: 100%;
@@ -470,9 +439,9 @@ blockquote {
 
 	a {
 		color: $body-text-color;
-		padding: 10px;
+		padding: 7px;
 		display: block;
-		font-size: 20px;
+		font-size: 17px;
 		@include transition-property(color);
   		@include transition-duration(0.5s);
 
