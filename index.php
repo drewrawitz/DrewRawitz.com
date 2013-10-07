@@ -39,7 +39,7 @@
 		</div>
 		<div class="sidebar-widget">
 			<h2>Resume</h2>
-			<a href="" class="block-link">Download my Resume</a>
+			<a href="#" class="block-link">Download my Resume</a>
 		</div>
 		<footer>
 			<ul class="social_icons">
