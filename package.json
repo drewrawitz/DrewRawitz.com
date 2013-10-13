@@ -8,10 +8,6 @@
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-sass": "0.6.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-watch": "~0.4.4",
-    "grunt-imageoptim": "~1.4.0",
-    "connect-livereload": "~0.2.0"
+    "grunt-imageoptim": "~1.4.0"
   }
 }
