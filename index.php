@@ -85,7 +85,7 @@
 				<p class="center">I use the following technologies and applications as part of my development.</p>
 
 				<ul align="center" class="box-item t-sprite">
-					<li><span class="technologies-apple"></span></li>
+					<li><span class="technologies-apple" title="Apple"></span></li>
 					<li><span class="technologies-html5"></span></li>
 					<li><span class="technologies-css3"></span></li>
 					<li><span class="technologies-jquery"></span></li>
