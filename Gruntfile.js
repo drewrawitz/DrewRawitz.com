@@ -25,12 +25,21 @@ module.exports = function(grunt) {
               ' * Copyright <%= pkg.copyright %>. <%= pkg.license %> licensed.\n' +
               ' */\n'
     },
-
+    /**
+     * Smushit
+     * Optimize images using Yahoo Smushit
+     * https://github.com/heldr/grunt-smushit
+     */
     smushit: {
       images: {
         src: ['assets/images/*']
       }
     },
+    /**
+     * Compass
+     * Compile Sass to CSS using Compass
+     * https://github.com/gruntjs/grunt-contrib-compass
+     */
     compass: {
       dist: {
         options: {
@@ -42,6 +51,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    /**
+     * CSSMin
+     * CSS minification
+     * https://github.com/gruntjs/grunt-contrib-cssmin
+     */
     cssmin: {
       add_banner: {
         options: {
@@ -53,7 +67,7 @@ module.exports = function(grunt) {
         }
       }
     },
-     /**
+    /**
      * Uglify (minify) JavaScript files
      * https://github.com/gruntjs/grunt-contrib-uglify
      * Compresses and minifies all JavaScript files into one
@@ -68,7 +82,7 @@ module.exports = function(grunt) {
         }
       }
     },
-   /**
+    /**
      * Runs tasks against changed watched files
      * https://github.com/gruntjs/grunt-contrib-watch
      * Watching development files and run concat/compile tasks
@@ -96,14 +110,21 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-smushit');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  /**
+   * Dynamically load npm tasks
+   */
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-  // Tasks.
+  /**
+   * Default task
+   * Run `grunt` on the command line
+   */
   grunt.registerTask('default', ['uglify', 'compass', 'cssmin']);
+
+  /**
+   * Image Optimization task
+   * Run `grunt optim` on the command line
+   */
   grunt.registerTask('optim', ['smushit']);
 
 };
