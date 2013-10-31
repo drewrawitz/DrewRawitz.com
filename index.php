@@ -86,19 +86,19 @@
 					<li><span class="technologies-css3"></span></li>
 					<li><span class="technologies-jquery"></span></li>
 					<li><span class="technologies-git"></span></li>
+					<li><span class="technologies-sass"></span></li>
+					<li><span class="technologies-compass"></span></li>
+					<li><span class="technologies-grunt"></span></li>
 					<li><span class="technologies-browsers"></span></li>
 					<li><span class="technologies-responsive"></span></li>
+					<li><span class="technologies-sublime_text2"></span></li>
+					<li><span class="technologies-codekit"></span></li>
+					<li><span class="technologies-photoshop"></span></li>
+					<li><span class="technologies-mamp_pro"></span></li>
 					<li><span class="technologies-php"></span></li>
 					<li><span class="technologies-mysql"></span></li>
 					<li><span class="technologies-wordpress"></span></li>
 					<li><span class="technologies-magento"></span></li>
-					<li><span class="technologies-sass"></span></li>
-					<li><span class="technologies-compass"></span></li>
-					<li><span class="technologies-sublime_text2"></span></li>
-					<li><span class="technologies-codekit"></span></li>
-					<li><span class="technologies-photoshop"></span></li>
-					<li><span class="technologies-filezilla"></span></li>
-					<li><span class="technologies-mamp_pro"></span></li>
 				</ul>
 			</section>
 
