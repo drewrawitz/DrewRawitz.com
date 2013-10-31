@@ -81,7 +81,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: '<%= project.css %>',
-        tasks: ['compass']
+        tasks: ['compass', 'cssmin']
       },
       images: {
         files: ['assets/images/*'],
