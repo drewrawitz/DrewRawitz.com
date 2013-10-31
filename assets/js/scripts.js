@@ -1,7 +1,3 @@
-//@codekit-prepend 'plugins/_jquery-embedagram.pack.js';
-//@codekit-prepend 'plugins/_jquery.lightbox-0.5.pack.js';
-//@codekit-prepend 'plugins/_jquery.nav_scroll.js';
-
 $(document).ready(function() {
     // Instagram Feed
 	$('.instagram-feed').embedagram({

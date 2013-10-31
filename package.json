@@ -1,13 +1,22 @@
 {
-  "name": "master-grunt",
+  "author": "Drew Rawitz",
+  "email": "email@drewrawitz.com",
+  "title": "Front-End Developer in Raleigh, NC",
+  "url": "http://www.drewrawitz.com",
+  "copyright": "2013",
   "version": "1.0.0",
-  "homepage": "http://www.drewrawitz.com",
-  "author": {
-    "name": "Drew Rawitz",
-    "email": "email@drewrawitz.com"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drewrawitz/DrewRawitz.com.git"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-imageoptim": "~1.4.0"
+    "grunt-smushit": "~1.1.2",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-cssmin": "~0.6.2"
   }
 }

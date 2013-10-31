@@ -9,11 +9,7 @@
 	<meta name="description" content="My name is Drew Rawitz, I am a front-end web developer in Raleigh, North Carolina. I absolutely love learning new things and taking on new challenges.">
 	<meta name="author" content="Drew Rawitz">
 	
-	<link rel="stylesheet" href="assets/css/global.css">
-
-	<!--[if lt IE 9]>
-	<script src="assets/js/vendor/html5shiv.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="assets/css/global.min.css">
 </head>
 <body>
 
@@ -128,7 +124,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-<script src="assets/js/main.min.js"></script>
+<script src="assets/js/scripts.min.js"></script>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];

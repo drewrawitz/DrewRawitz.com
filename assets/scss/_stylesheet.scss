@@ -29,10 +29,7 @@ h1, h2, h3, h4 {
 	margin: 0 0 10px 0;
 }
 
-p {
-	margin: 1em 0;
-}
-
+p { margin: 1em 0; }
 b, strong { font-weight: bold; }
 i, em { font-style: italic; }
 
@@ -174,6 +171,11 @@ blockquote {
 	}
 }
 
+.boxshadow .box-item li {
+	@include box-shadow(#ccc 0px 0px 3px);
+	border: none;
+}
+
 .box-item {
 	@extend .clearfix;
 	margin: 20px auto 0 auto;
@@ -181,7 +183,7 @@ blockquote {
 	padding: 0;
 
 	li {
-		@include box-shadow(#ccc 0px 0px 3px);
+		border: 1px solid #ccc;
 		position: relative;
 		background: #fff;
 		display: inline-block;
@@ -191,37 +193,6 @@ blockquote {
 		&:hover {
 			@include box-shadow(#acacac 0px 0px 10px);
 			cursor: pointer;
-		}
-	}
-}
-
-.box-tabs {
-	@extend .clearfix;
-	margin-bottom: 10px;
-	margin-top: 100px;
-	border-bottom: 6px solid #ce5043;
-
-	li {
-		float: left;
-	}
-}
-.heading {
-	padding: 8px 15px;
-	font-size: 20px;
-	margin: 0;
-	display: inline-block;
-
-	&.heading-movies {
-		&.active {
-			background: #ce5043;
-			color: white;
-		}
-	}
-
-	&.heading-books {
-		&.active {
-			background: #1aa1e1;
-			color: white;
 		}
 	}
 }
