@@ -8,7 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="My name is Drew Rawitz, I am a front-end web developer in Raleigh, North Carolina. I absolutely love learning new things and taking on new challenges.">
 	<meta name="author" content="Drew Rawitz">
-	
+
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="assets/css/global.min.css">
 </head>
 <body>
