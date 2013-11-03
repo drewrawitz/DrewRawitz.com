@@ -39,9 +39,28 @@
    Fonts & Typography
    ========================================================================== */
 
-	@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
-	@import url(http://fonts.googleapis.com/css?family=Allan:700);
 	@import "modules/font_icons";
+
+  @font-face {
+    font-family: 'Allan';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Allan Bold'), local('Allan-Bold'), url(http://themes.googleusercontent.com/static/fonts/allan/v4/HDuJMALbbJ3Ny_JtXeABSXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+  }
 
 	@mixin body-font {
 		font: 14px/24px 'Droid Sans', sans-serif;
