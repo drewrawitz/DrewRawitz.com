@@ -649,12 +649,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 73, ../scss/vendor/_lightbox.scss */
 #lightbox-container-image-data-box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   font: 10px Verdana, Helvetica, sans-serif;
   background-color: #fff;
   margin: 0 auto;
   line-height: 1.4em;
   overflow: auto;
-  width: 632px !important;
   padding: 0 10px 0;
 }
 
@@ -695,7 +697,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
    ========================================================================== */
 /* line 194, technologies/*.png */
 .technologies-sprite, .t-sprite .technologies-apple, .t-sprite .technologies-browsers, .t-sprite .technologies-codekit, .t-sprite .technologies-compass, .t-sprite .technologies-css3, .t-sprite .technologies-filezilla, .t-sprite .technologies-git, .t-sprite .technologies-grunt, .t-sprite .technologies-html5, .t-sprite .technologies-jquery, .t-sprite .technologies-less, .t-sprite .technologies-magento, .t-sprite .technologies-mamp_pro, .t-sprite .technologies-mysql, .t-sprite .technologies-photoshop, .t-sprite .technologies-php, .t-sprite .technologies-responsive, .t-sprite .technologies-sass, .t-sprite .technologies-sublime_text2, .t-sprite .technologies-wordpress {
-  background: url('../images/technologies-s1b7ed8b6cd.png') no-repeat;
+  background: url('../images/technologies-sd987a2817f.png') no-repeat;
 }
 
 /* line 60, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */

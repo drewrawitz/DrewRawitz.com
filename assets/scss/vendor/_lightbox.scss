@@ -71,12 +71,12 @@
 	float: right;
 }
 #lightbox-container-image-data-box {
+	@include box-sizing(content-box);
 	font: 10px Verdana, Helvetica, sans-serif;
 	background-color: #fff;
 	margin: 0 auto;
 	line-height: 1.4em;
 	overflow: auto;
-	width: 632px !important;
 	padding: 0 10px 0;
 }
 #lightbox-container-image-data {
