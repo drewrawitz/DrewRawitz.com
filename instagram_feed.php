@@ -1,5 +1,4 @@
 <?php
-  
   // function to save the external images so we have a copy
   function save_image($inPath,$outPath) {
       $in  =  fopen($inPath, "rb");
@@ -29,14 +28,15 @@
 
   // loop through the feed and put the items in an array
   foreach($data->data as $item) :
-    $feed_recent_array[] = basename($item->images->standard_resolution->url);
+    $feed_recent_array['full'][] = $item->images->low_resolution->url;
+    $feed_recent_array['base'][] = basename($item->images->low_resolution->url);
   endforeach;
 
   // loop through our array
-  foreach($feed_recent_array as $item) :
+  foreach($feed_recent_array['full'] as $item) :
     // if there's a new image, let's save it to the recent folder
     if(!file_exists(RECENT_IMAGE_PATH."/".$item."")) {
-      save_image($item,"".RECENT_IMAGE_PATH."/".$item."");
+      save_image($item,RECENT_IMAGE_PATH."/".basename($item)."");
     }
   endforeach;
 
@@ -46,7 +46,7 @@
     $recent_folder_array[] = $folder; 
   endforeach;
 
-  $feed_archive_array = array_diff($recent_folder_array, $feed_recent_array);
+  $feed_archive_array = array_diff($recent_folder_array, $feed_recent_array['base']);
 
   // move the items from our archive array into the archive folder
   foreach($feed_archive_array as $archive) :
