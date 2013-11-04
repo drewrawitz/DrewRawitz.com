@@ -32,7 +32,11 @@
 		</nav>
 		<div class="sidebar-widget">
 			<h2>Instagram</h2>
-			<ul class="instagram-feed"></ul>
+			<ul class="instagram-feed">
+				<?php foreach(glob("assets/images/instagram/recent/*.*") as $image) : ?>
+					<li><a href="<?=$image;?>" rel="lightbox"><img src="<?=$image;?>"></a></li>
+				<?php endforeach; ?>
+			</ul>
 		</div>
 		<div class="sidebar-widget">
 			<h2>Resume</h2>

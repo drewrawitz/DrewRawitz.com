@@ -163,6 +163,7 @@ blockquote {
 			@include transition-property(border);
   		@include transition-duration(1s);
 			border: 1px solid #333;
+			max-width: 60px;
 		}
 		
 		&:hover img {
