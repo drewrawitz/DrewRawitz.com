@@ -1007,7 +1007,7 @@ footer {
   /* line 25, ../scss/modules/_responsive.scss */
   .primary-sidebar {
     position: relative;
-    width: auto;
+    width: 100%;
     margin-bottom: 40px;
   }
 
@@ -1020,7 +1020,7 @@ footer {
   .main-content {
     float: none;
     padding: 0;
-    width: auto;
+    width: 100%;
     min-height: auto;
   }
   /* line 39, ../scss/modules/_responsive.scss */

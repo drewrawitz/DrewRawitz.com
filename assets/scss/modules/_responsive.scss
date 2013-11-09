@@ -24,7 +24,7 @@
 @media only screen and (max-width: 767px) { 
 	.primary-sidebar {
 		position: relative;
-		width: auto;
+		width: 100%;
 		margin-bottom: 40px;
 	}
 	.sidebar-widget {
@@ -33,7 +33,7 @@
 	.main-content {
 		float: none;
 		padding: 0;
-		width: auto;
+		width: 100%;
 		min-height: auto;
 
 		h1 {
