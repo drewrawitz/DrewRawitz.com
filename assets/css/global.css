@@ -837,28 +837,24 @@ blockquote {
 .main-content #home .description {
   margin: 0 0 25px 0;
 }
-/* line 339, ../scss/_stylesheet.scss */
-.main-content #about .photo-wrapper {
-  float: left;
-}
 
-/* line 346, ../scss/_stylesheet.scss */
+/* line 340, ../scss/_stylesheet.scss */
 #contact p {
   width: 65%;
   margin: auto;
 }
 
-/* line 352, ../scss/_stylesheet.scss */
+/* line 346, ../scss/_stylesheet.scss */
 .contact-form {
   width: 400px;
   margin: 40px auto 0 auto;
 }
-/* line 356, ../scss/_stylesheet.scss */
+/* line 350, ../scss/_stylesheet.scss */
 .contact-form .form-row {
   margin-bottom: 10px;
   line-height: 33px;
 }
-/* line 360, ../scss/_stylesheet.scss */
+/* line 354, ../scss/_stylesheet.scss */
 .contact-form .form-row label {
   float: left;
   width: 120px;
@@ -867,12 +863,12 @@ blockquote {
   position: relative;
   top: 2px;
 }
-/* line 369, ../scss/_stylesheet.scss */
+/* line 363, ../scss/_stylesheet.scss */
 .contact-form .form-row .error {
   color: darkRed;
   font-weight: bold;
 }
-/* line 374, ../scss/_stylesheet.scss */
+/* line 368, ../scss/_stylesheet.scss */
 .contact-form .form-row input[type=text], .contact-form .form-row input[type=email], .contact-form .form-row textarea {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -887,16 +883,16 @@ blockquote {
   width: 250px;
   font-size: 80%;
 }
-/* line 382, ../scss/_stylesheet.scss */
+/* line 376, ../scss/_stylesheet.scss */
 .contact-form .form-row input[type=text]:hover, .contact-form .form-row input[type=email]:hover, .contact-form .form-row textarea:hover {
   background: #fff3c5;
   cursor: pointer;
 }
-/* line 389, ../scss/_stylesheet.scss */
+/* line 383, ../scss/_stylesheet.scss */
 .contact-form textarea {
   resize: vertical;
 }
-/* line 391, ../scss/_stylesheet.scss */
+/* line 385, ../scss/_stylesheet.scss */
 .contact-form input[type=submit] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -921,19 +917,19 @@ blockquote {
   overflow: visible;
   width: auto;
 }
-/* line 409, ../scss/_stylesheet.scss */
+/* line 403, ../scss/_stylesheet.scss */
 .contact-form input[type=submit]:hover {
   background-color: #111;
   color: #fff;
 }
 
-/* line 416, ../scss/_stylesheet.scss */
+/* line 410, ../scss/_stylesheet.scss */
 .social_icons {
   list-style: none;
   padding: 0;
   margin: 0 0 15px 0;
 }
-/* line 422, ../scss/_stylesheet.scss */
+/* line 416, ../scss/_stylesheet.scss */
 .social_icons li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -945,7 +941,7 @@ blockquote {
   font-size: 1.4em;
   background: black;
 }
-/* line 430, ../scss/_stylesheet.scss */
+/* line 424, ../scss/_stylesheet.scss */
 .social_icons a {
   -webkit-transition-property: color;
   -moz-transition-property: color;
@@ -960,13 +956,13 @@ blockquote {
   display: block;
   font-size: 17px;
 }
-/* line 438, ../scss/_stylesheet.scss */
+/* line 432, ../scss/_stylesheet.scss */
 .social_icons a:hover {
   color: white;
   cursor: pointer;
 }
 
-/* line 445, ../scss/_stylesheet.scss */
+/* line 439, ../scss/_stylesheet.scss */
 footer {
   font-size: 80%;
   line-height: 150%;
@@ -1003,91 +999,5 @@ footer {
   }
 }
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  /* line 25, ../scss/modules/_responsive.scss */
-  .primary-sidebar {
-    position: relative;
-    width: auto;
-    margin-bottom: 40px;
-  }
-
-  /* line 30, ../scss/modules/_responsive.scss */
-  .sidebar-widget {
-    display: none;
-  }
-
-  /* line 33, ../scss/modules/_responsive.scss */
-  .main-content {
-    float: none;
-    padding: 0;
-    width: auto;
-    min-height: auto;
-  }
-  /* line 39, ../scss/modules/_responsive.scss */
-  .main-content h1 {
-    margin-bottom: 0px;
-    font-size: 28px;
-  }
-  /* line 43, ../scss/modules/_responsive.scss */
-  .main-content h1 .logo-font {
-    font-size: 49px;
-  }
-  /* line 47, ../scss/modules/_responsive.scss */
-  .main-content h2 {
-    font-size: 4em;
-  }
-  /* line 50, ../scss/modules/_responsive.scss */
-  .main-content .content-wrapper {
-    width: 100%;
-  }
-  /* line 53, ../scss/modules/_responsive.scss */
-  .main-content section {
-    margin-bottom: 100px;
-  }
-  /* line 56, ../scss/modules/_responsive.scss */
-  .main-content #about {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 61, ../scss/modules/_responsive.scss */
-  .main-content #about .photo-wrapper {
-    float: none;
-    text-align: center;
-  }
-
-  /* line 67, ../scss/modules/_responsive.scss */
-  .drew-illustration {
-    display: none;
-  }
-
-  /* line 70, ../scss/modules/_responsive.scss */
-  .main-nav {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-  /* line 74, ../scss/modules/_responsive.scss */
-  .main-nav ul {
-    overflow: hidden;
-  }
-  /* line 77, ../scss/modules/_responsive.scss */
-  .main-nav li {
-    border: none;
-    width: 48%;
-    float: left;
-    margin: 3px;
-    background: #333;
-    padding-left: 12px;
-  }
-  /* line 85, ../scss/modules/_responsive.scss */
-  .main-nav li:first-child {
-    display: none;
-  }
-
-  /* line 90, ../scss/modules/_responsive.scss */
-  footer {
-    display: none;
-  }
-}
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
