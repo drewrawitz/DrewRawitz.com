@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
@@ -33,9 +33,18 @@
 		<div class="sidebar-widget">
 			<h2>Instagram</h2>
 			<ul class="instagram-feed">
-				<?php foreach(glob("assets/images/instagram/recent/*.*") as $image) : ?>
-					<li><a href="<?=$image;?>" rel="lightbox"><img src="<?=$image;?>"></a></li>
-				<?php endforeach; ?>
+			<?php
+				$feed_array = array();
+				
+				foreach(glob("assets/images/instagram/recent/*.*") as $image) :
+					$image = basename($image);
+					$feed_array[] = $image;
+				endforeach;
+
+				foreach($feed_array as $image) :
+					echo "<li><a href=\"assets/images/instagram/recent/$image\" rel=\"lightbox\"><img src=\"assets/images/instagram/recent/thumbs/$image\"></a></li>";
+				endforeach;
+			?>
 			</ul>
 		</div>
 		<div class="sidebar-widget">
