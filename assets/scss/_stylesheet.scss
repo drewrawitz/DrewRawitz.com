@@ -10,6 +10,20 @@ body {
 	color: $body-text-color;
 }
 
+.clearfix {
+  *zoom: 1;
+  
+  &:before, &:after {
+  	display: table;
+  	content: "";
+  	line-height: 0;
+  }
+
+  &:after {
+  	clear: both;
+  }
+}
+
 .pull-left {
 	float: left;
 }
