@@ -76,18 +76,15 @@
 
 			<section id="about">
 				<h2 class="lines"><span>About Me</span></h2>
-				<div class="row-fluid">
-					<div class="span3">
-						<img src="assets/images/drew_photo.jpg" class="pull-right photo photo-rounded">
-					</div>
-					<div class="span9">
-						<p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work for <a href="http://www.atlanticbt.com" class="link" target="_blank" rel="nofollow">Atlantic BT</a>, Raleigh's Largest Website &amp; Software Development Company.</p>
-						<p>My job involves doing what I love, <strong>developing</strong> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="#" class="link">resume</a>.</p>
-					</div>
+				
+				<div class="photo-wrapper">
+					<img src="assets/images/drew_photo.jpg" class="photo photo-rounded">
 				</div>
+
+				<p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work for <a href="http://www.atlanticbt.com" class="link" target="_blank" rel="nofollow">Atlantic BT</a>, Raleigh's Largest Website &amp; Software Development Company.</p>
+				<p>My job involves doing what I love, <strong>developing</strong> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="#" class="link">resume</a>.</p>
 				<p class="center">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 				<blockquote>“Success consists of going from failure to failure without loss of enthusiasm.” <em>–Winston Churchill</em></blockquote>
-
 			</section>
 
 			<section id="toolkit">
