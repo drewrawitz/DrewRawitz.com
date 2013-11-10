@@ -31,24 +31,8 @@
 			</ul>
 		</nav>
 		<div class="sidebar-widget">
-			<h2>Instagram</h2>
-			<ul class="instagram-feed">
-			<?php
-				$feed_array = array();
-				
-				foreach(glob("assets/images/instagram/recent/*.*") as $image) :
-					$image = basename($image);
-					$feed_array[] = $image;
-				endforeach;
-
-				// shuffle, to randomize the order each time
-				shuffle($feed_array);
-
-				foreach(array_slice($feed_array,0,6) as $image) :
-					echo "<li><a href=\"assets/images/instagram/recent/$image\" rel=\"lightbox\"><img src=\"assets/images/instagram/recent/thumbs/$image\"></a></li>";
-				endforeach;
-			?>
-			</ul>
+			<h2 class="pull-left">Instagram</h2> <i class="ig-reload icon-arrows-cw"></i>
+			<ul class="instagram-feed"></ul>
 		</div>
 		<div class="sidebar-widget">
 			<h2>Resume</h2>

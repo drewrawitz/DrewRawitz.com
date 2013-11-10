@@ -163,11 +163,22 @@ blockquote {
 	}
 }
 
+.ig-reload {
+	float: right;
+	
+	&:hover {
+		cursor: pointer;
+		color: white;
+	}
+}
+
 .instagram-feed {
 	@extend .clearfix;
+	clear: both;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	height: 140px;
 
 	li {
 		float: left;

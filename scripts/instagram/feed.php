@@ -6,12 +6,10 @@
   define("INSTAGRAM_ID", "37768681");
   define("ACCESS_TOKEN", "37768681.04d79f8.6f019b7ab5da41afaad35c7a6889e397");
   define("PHOTO_COUNT", 50);
-  define("RECENT_IMAGE_PATH", "../../assets/images/instagram/recent");
-  define("ARCHIVE_IMAGE_PATH", "../../assets/images/instagram/archive");
+  define("IMAGE_PATH", "../../assets/images/instagram");
 
   // create our empty arrays
   $feed_recent_array = array();
-  $feed_archive_array = array();
   $recent_folder_array = array();
 
   // grab the instagram feed
@@ -28,24 +26,11 @@
   foreach($feed_recent_array['full'] as $item) :
 
     // if there's a new image, let's save it to the recent folder
-    if(!glob(RECENT_IMAGE_PATH."/*".basename($item))) {
+    if(!glob(IMAGE_PATH."/*".basename($item))) {
       $file_name = basename($item);
 
-      save_image($item,RECENT_IMAGE_PATH."/".$file_name);
-      createThumbnail($file_name, RECENT_IMAGE_PATH."/", RECENT_IMAGE_PATH."/thumbs/");
+      save_image($item,IMAGE_PATH."/".$file_name);
+      createThumbnail($file_name, IMAGE_PATH."/", IMAGE_PATH."/thumbs/");
     }
-  endforeach;
-
-  // loop through our recent images folder
-  foreach(glob(RECENT_IMAGE_PATH."/*.*") as $folder) :
-    $folder = basename($folder);
-    $recent_folder_array[] = $folder; 
-  endforeach;
-
-  $feed_archive_array = array_diff($recent_folder_array, $feed_recent_array['base']);
-
-  // move the items from our archive array into the archive folder
-  foreach($feed_archive_array as $archive) :
-    rename(RECENT_IMAGE_PATH."/".$archive, ARCHIVE_IMAGE_PATH."/".$archive);
   endforeach;
 ?>
