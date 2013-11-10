@@ -41,7 +41,10 @@
 					$feed_array[] = $image;
 				endforeach;
 
-				foreach($feed_array as $image) :
+				// shuffle, to randomize the order each time
+				shuffle($feed_array);
+
+				foreach(array_slice($feed_array,0,6) as $image) :
 					echo "<li><a href=\"assets/images/instagram/recent/$image\" rel=\"lightbox\"><img src=\"assets/images/instagram/recent/thumbs/$image\"></a></li>";
 				endforeach;
 			?>
@@ -86,7 +89,6 @@
 					
 				<p class="center">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 				<blockquote>“Success consists of going from failure to failure without loss of enthusiasm.” <em>–Winston Churchill</em></blockquote>
-
 			</section>
 
 			<section id="toolkit">
@@ -134,10 +136,10 @@
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</aside>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-<script src="assets/js/scripts.min.js"></script>
+	<script src="assets/js/scripts.min.js"></script>
 
 </body>
 </html>
