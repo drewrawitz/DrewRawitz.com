@@ -15,6 +15,7 @@ $(document).ready(function() {
         });
 
         $(html).hide().appendTo(".instagram-feed").fadeIn(1000);
+        $('.ig-reload').removeClass('animate-spin');
 
         $('[rel=lightbox]').lightBox({
           imageLoading: 'assets/images/lightbox/lightbox-ico-loading.gif',
@@ -29,6 +30,8 @@ $(document).ready(function() {
     displayData(instagram_feed);
 
     $('.ig-reload').on('click', function() {
+      $(this).addClass('animate-spin');
+
       $('.instagram-feed').html('');
       displayData(ajaxRequest());
     });
