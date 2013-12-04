@@ -1091,8 +1091,12 @@ blockquote {
   color: white;
   cursor: pointer;
 }
+/* line 454, ../scss/_stylesheet.scss */
+.social_icons a:active {
+  color: #ffad00;
+}
 
-/* line 456, ../scss/_stylesheet.scss */
+/* line 460, ../scss/_stylesheet.scss */
 footer {
   font-size: 80%;
   line-height: 150%;

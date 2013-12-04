@@ -450,6 +450,10 @@ blockquote {
 			color: white;
 			cursor: pointer;
 		}
+
+		&:active {
+			color: $secondary-color;
+		}
 	}
 }
 
