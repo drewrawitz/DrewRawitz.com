@@ -1,7 +1,8 @@
 /*!
- * @author Drew Rawitz <email@drewrawitz.com>
+ * DrewRawitz.com
  * Front-End Developer in Raleigh, NC
  * http://www.drewrawitz.com
+ * @author Drew Rawitz <email@drewrawitz.com>
  * @version 1.0.0
  * Copyright 2013. MIT licensed.
  */
