@@ -48,7 +48,8 @@ module.exports = function(grunt) {
           cssDir: 'assets/css',
           imagesDir: 'assets/images',
           httpGeneratedImagesPath: '../images',
-          outputStyle: 'expanded'
+          outputStyle: 'expanded',
+          noLineComments: true
         }
       }
     },
