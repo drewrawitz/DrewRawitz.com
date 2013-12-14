@@ -2,4 +2,5 @@ config.rb
 includes/forms/contact_form.php
 .sass-cache/*
 node_modules/*
+assets/js/vendor/*
 npm-debug.log
