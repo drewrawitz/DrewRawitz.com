@@ -8,7 +8,7 @@ module.exports = function(grunt) {
      */
     project: {
       css: ['assets/scss/*'],
-      js: ['assets/js/vendor/modernizr-2.6.2.js', 'assets/js/plugins/*', 'assets/js/scripts.js']
+      js: ['assets/js/plugins/*', 'assets/js/scripts.js']
     },
 
     /**
