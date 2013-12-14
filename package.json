@@ -14,7 +14,6 @@
   "devDependencies": {
     "bower": "~1.2.6",
     "grunt": "~0.4.1",
-    "grunt-smushit": "*",
     "grunt-contrib-compass": "*",
     "grunt-contrib-watch": "*",
     "grunt-contrib-concat": "*",

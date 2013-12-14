@@ -55,16 +55,6 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Smushit
-     * Optimize images using Yahoo Smushit
-     * https://github.com/heldr/grunt-smushit
-     */
-    smushit: {
-      images: {
-        src: ['<%= project.images %>/*']
-      }
-    },
-    /**
      * Compass
      * Compile Sass to CSS using Compass
      * https://github.com/gruntjs/grunt-contrib-compass
@@ -155,6 +145,6 @@ module.exports = function(grunt) {
    * Image Optimization task
    * Run `grunt optim` on the command line
    */
-  grunt.registerTask('optim', ['smushit']);
+  grunt.registerTask('optim', ['imagemin']);
 
 };
