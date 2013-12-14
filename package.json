@@ -12,6 +12,7 @@
     "url": "https://github.com/drewrawitz/DrewRawitz.com.git"
   },
   "devDependencies": {
+    "bower": "~1.2.6",
     "grunt": "~0.4.1",
     "grunt-smushit": "*",
     "grunt-contrib-compass": "*",
@@ -19,6 +20,11 @@
     "grunt-contrib-concat": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-cssmin": "*",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-bower-task": "~0.3.4",
     "matchdep": "*"
+  },
+  "scripts": {
+    "postinstall" : "node_modules/.bin/bower install"
   }
 }

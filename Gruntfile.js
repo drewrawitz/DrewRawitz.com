@@ -28,6 +28,17 @@ module.exports = function(grunt) {
               ' * Copyright <%= pkg.copyright %>. <%= pkg.license %> licensed.\n' +
               ' */\n'
     },
+
+    /**
+     * Build bower components
+     * https://github.com/yatskevich/grunt-bower-task
+     */
+    bower: {
+      dist: {
+        dest: '<%= project.js %>/vendor/'
+      }
+    },
+
     /**
      * Smushit
      * Optimize images using Yahoo Smushit
@@ -123,7 +134,7 @@ module.exports = function(grunt) {
    * Default task
    * Run `grunt` on the command line
    */
-  grunt.registerTask('default', ['uglify', 'compass', 'cssmin']);
+  grunt.registerTask('default', ['bower', 'uglify', 'compass', 'cssmin']);
 
   /**
    * Image Optimization task
