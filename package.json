@@ -21,9 +21,10 @@
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-imagemin": "~0.4.0",
     "grunt-bower-task": "~0.3.4",
-    "matchdep": "*"
+    "matchdep": "*",
+    "grunt-autoprefixer": "~0.4.2"
   },
   "scripts": {
-    "postinstall" : "node_modules/.bin/bower install"
+    "postinstall": "node_modules/.bin/bower install"
   }
 }

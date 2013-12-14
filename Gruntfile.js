@@ -71,6 +71,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     /**
      * CSSMin
      * CSS minification
@@ -87,6 +88,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     /**
      * Uglify (minify) JavaScript files
      * https://github.com/gruntjs/grunt-contrib-uglify
@@ -102,6 +104,13 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    autoprefixer: {
+      single_file: {
+        src: '<%= project.css %>/global.css'
+      },
+    },
+
     /**
      * Runs tasks against changed watched files
      * https://github.com/gruntjs/grunt-contrib-watch
@@ -139,7 +148,7 @@ module.exports = function(grunt) {
    * Default task
    * Run `grunt` on the command line
    */
-  grunt.registerTask('default', ['bower', 'uglify', 'compass', 'cssmin']);
+  grunt.registerTask('default', ['bower', 'uglify', 'compass', 'autoprefixer', 'cssmin']);
 
   /**
    * Image Optimization task
