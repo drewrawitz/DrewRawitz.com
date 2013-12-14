@@ -7,8 +7,10 @@ module.exports = function(grunt) {
      * Set project info
      */
     project: {
-      css: ['assets/scss/*'],
-      js: ['assets/js/plugins/*', 'assets/js/scripts.js']
+      css: ['assets/css'],
+      sass: ['assets/scss'],
+      images: ['assets/images'],
+      js: ['assets/js']
     },
 
     /**
@@ -33,7 +35,7 @@ module.exports = function(grunt) {
      */
     smushit: {
       images: {
-        src: ['assets/images/*']
+        src: ['<%= project.images %>/*']
       }
     },
     /**
@@ -44,9 +46,9 @@ module.exports = function(grunt) {
     compass: {
       dist: {
         options: {
-          sassDir: 'assets/scss',
-          cssDir: 'assets/css',
-          imagesDir: 'assets/images',
+          sassDir: '<%= project.sass %>',
+          cssDir: '<%= project.css %>',
+          imagesDir: '<%= project.images %>',
           httpGeneratedImagesPath: '../images',
           outputStyle: 'expanded',
           noLineComments: true
@@ -65,7 +67,7 @@ module.exports = function(grunt) {
           keepSpecialComments: 0
         },
         files: {
-          'assets/css/global.min.css': ['assets/css/global.css']
+          '<%= project.css %>/global.min.css': ['<%= project.css %>/global.css']
         }
       }
     },
@@ -80,7 +82,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'assets/js/scripts.min.js': '<%= project.js %>'
+          '<%= project.js %>/scripts.min.js': ['<%= project.js %>/plugins/*', '<%= project.js %>/scripts.js']
         }
       }
     },
@@ -92,21 +94,21 @@ module.exports = function(grunt) {
      */
     watch: {
       js: {
-        files: '<%= project.js %>',
+        files: ['<%= project.js %>/plugins/*', '<%= project.js %>/scripts.js'],
         tasks: ['uglify']
       },
       css: {
-        files: '<%= project.css %>',
+        files: '<%= project.sass %>/*',
         tasks: ['compass', 'cssmin']
       },
       images: {
-        files: ['assets/images/*'],
+        files: ['<%= project.images %>/*'],
         tasks: ['smushit']
       },
       livereload: {
         options: { livereload: true },
         files: [
-          'assets/css/*.css'
+          '<%= project.css %>/*.css'
         ]
       }
     }
