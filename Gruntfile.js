@@ -40,6 +40,21 @@ module.exports = function(grunt) {
     },
 
     /**
+     * Minify PNG and JPEG images.
+     * https://github.com/gruntjs/grunt-contrib-imagemin
+     */
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'assets/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/images/'
+        }]
+      }
+    },
+
+    /**
      * Smushit
      * Optimize images using Yahoo Smushit
      * https://github.com/heldr/grunt-smushit
