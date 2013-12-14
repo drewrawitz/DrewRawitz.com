@@ -1,0 +1,22 @@
+{
+  "name": "DrewRawitz.com",
+  "version": "1.0.0",
+  "homepage": "http://www.drewrawitz.com",
+  "authors": [
+    "Drew Rawitz <email@drewrawitz.com>"
+  ],
+  "description": "Front-End Developer in Raleigh, NC",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "modernizr": "~2.7.1"
+  }
+}
