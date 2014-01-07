@@ -11,7 +11,7 @@ $(document).ready(function() {
       data.success(function(realData) {
         var html = '';
         jQuery.each( realData, function( i, val ) {
-          html += '<li><a href="assets/images/instagram/'+val+'" rel="lightbox"><img src="assets/images/instagram/thumbs/'+val+'"></a></li>';
+          html += '<li><a href="assets/images/instagram/'+val+'" rel="lightbox"><img src="assets/images/instagram/thumbs/'+val+'" width="60" height="60"></a></li>';
         });
 
         $(html).hide().appendTo(".instagram-feed").fadeIn(1000);
