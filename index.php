@@ -40,7 +40,7 @@
 			<h2>Resume</h2>
 			<a href="#" class="block-link"> <i class="icon-download"></i> Download my Resume</a>
 		</div>
-		<footer>
+		<footer class="primary-footer">
 			<ul class="social_icons">
 				<li><a href="http://www.twitter.com/DrewRawitz" rel="me" target="_blank"><i class="icon-twitter"></i></a></li>
 				<li><a href="http://www.github.com/drewrawitz" rel="me" target="_blank"><i class="icon-github-circled"></i></a></li>
