@@ -105,6 +105,12 @@ module.exports = function(grunt) {
       }
     },
 
+    /**
+     * Autoprefixer
+     * https://github.com/nDmitry/grunt-autoprefixer
+     * Autoprefixer parses CSS and adds vendor-prefixed
+     * CSS properties using the Can I Use database.
+     */
     autoprefixer: {
       single_file: {
         src: '<%= project.css %>/global.css'
@@ -133,7 +139,7 @@ module.exports = function(grunt) {
       livereload: {
         options: { livereload: true },
         files: [
-          '<%= project.css %>/*.css'
+          '<%= project.css %>/global.min.css'
         ]
       }
     }
