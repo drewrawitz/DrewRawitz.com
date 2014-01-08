@@ -457,10 +457,10 @@ blockquote {
 	}
 }
 
-footer {
+.primary-footer {
+	position: absolute;
+	bottom: 10px;
 	font-size: 80%;
 	line-height: 150%;
 	text-align: center;
-	position: absolute;
-	bottom: 10px;
 }
