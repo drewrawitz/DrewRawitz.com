@@ -112,6 +112,9 @@ module.exports = function(grunt) {
      * CSS properties using the Can I Use database.
      */
     autoprefixer: {
+      options: {
+        browsers: 'last 2 versions'
+      },
       single_file: {
         src: '<%= project.css %>/global.css'
       },
