@@ -1,6 +1,43 @@
-config.rb
+# DrewRawitz.com
+# http://www.drewrawitz.com
+# @author Drew Rawitz
+
+## Custom
 includes/forms/contact_form.php
-.sass-cache/*
-node_modules/*
-assets/js/vendor/*
+
+## Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
 npm-debug.log
+node_modules
+
+## Bower
+assets/js/vendor
+
+## Sass
+.sass-cache
+config.rb
+
+## OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
