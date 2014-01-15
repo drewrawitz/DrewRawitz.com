@@ -3,7 +3,7 @@
 # @author Drew Rawitz
 
 ## Custom
-includes/forms/contact_form.php
+app/config.php
 
 ## Node.js
 lib-cov
@@ -21,7 +21,7 @@ npm-debug.log
 node_modules
 
 ## Bower
-assets/js/vendor
+app/assets/js/vendor
 
 ## Sass
 .sass-cache

@@ -10,7 +10,7 @@
 	<meta name="author" content="Drew Rawitz">
 	
 	<link href="//www.google-analytics.com" rel="dns-prefetch">
-  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+	<link href="//ajax.googleapis.com" rel="dns-prefetch">
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="assets/css/global.min.css">
 
@@ -130,13 +130,13 @@
 	<script src="assets/js/scripts.min.js"></script>
 
 	<script>
-    (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-    (f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-    l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-34472559-1');
-    ga('send', 'pageview');
-    </script>
+		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
+		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
+		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-34472559-1');
+		ga('send', 'pageview');
+		</script>
 
 </body>
 </html>

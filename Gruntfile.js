@@ -7,10 +7,11 @@ module.exports = function(grunt) {
      * Set project info
      */
     project: {
-      css: ['assets/css'],
-      sass: ['assets/scss'],
-      images: ['assets/images'],
-      js: ['assets/js']
+      app: ['app'],
+      css: ['<%= project.app %>/assets/css'],
+      sass: ['<%= project.app %>/assets/scss'],
+      images: ['<%= project.app %>/assets/images'],
+      js: ['<%= project.app %>/assets/js']
     },
 
     /**
@@ -47,9 +48,9 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'assets/images/',
+          cwd: '<%= project.images %>/',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'assets/images/'
+          dest: '<%= project.images %>/'
         }]
       }
     },
