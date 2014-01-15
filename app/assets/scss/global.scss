@@ -1,26 +1,26 @@
 /* ==========================================================================
-   Custom Variables
-   ========================================================================== */
+	 Custom Variables
+	 ========================================================================== */
 
-   $secondary-color: #FFAD00;
-   $link-color: #b51b00;
-   $body-text-color: #707070;
-   $sidebar-width: 252px;
+	 $secondary-color: #FFAD00;
+	 $link-color: #b51b00;
+	 $body-text-color: #707070;
+	 $sidebar-width: 252px;
 
 
 /* ==========================================================================
-   Import Necessary Files
-   ========================================================================== */
-  
-  @import "compass";
+	 Import Necessary Files
+	 ========================================================================== */
+	
+	@import "compass";
 	@import "compass/reset";
 	@import "vendor/lightbox";
-  @import "modules/animations";
+	@import "modules/animations";
 
 
 /* ==========================================================================
-   Custom Sprites
-   ========================================================================== */
+	 Custom Sprites
+	 ========================================================================== */
 
 	@import "technologies/*.png";
 
@@ -36,31 +36,31 @@
 
 
 /* ==========================================================================
-   Fonts & Typography
-   ========================================================================== */
+	 Fonts & Typography
+	 ========================================================================== */
 
 	@import "modules/font_icons";
 
-  @font-face {
-    font-family: 'Allan';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Allan Bold'), local('Allan-Bold'), url(http://themes.googleusercontent.com/static/fonts/allan/v4/HDuJMALbbJ3Ny_JtXeABSXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
-  }
+	@font-face {
+		font-family: 'Allan';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Allan Bold'), local('Allan-Bold'), url(http://themes.googleusercontent.com/static/fonts/allan/v4/HDuJMALbbJ3Ny_JtXeABSXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+	}
 
-  @font-face {
-    font-family: 'Droid Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Droid Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
-  }
+	@font-face {
+		font-family: 'Droid Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+	}
+	
+	@font-face {
+		font-family: 'Droid Sans';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+	}
 
 	@mixin body-font {
 		font: 14px/24px 'Droid Sans', sans-serif;
@@ -78,14 +78,14 @@
 
 
 /* ==========================================================================
-    Build Specific Styles
-   ========================================================================== */
+		Build Specific Styles
+	 ========================================================================== */
 
 	@import "stylesheet";
 
 	
 /* ==========================================================================
-    Media Queries
-   ========================================================================== */
+		Media Queries
+	 ========================================================================== */
 
 	@import "modules/responsive";
