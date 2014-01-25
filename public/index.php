@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="assets/css/global.min.css">
 
-  <script src="assets/js/vendor/modernizr/modernizr.js"></script>
+  <script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
 
@@ -125,7 +125,7 @@
   </aside>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery/jquery.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="libs/jquery/jquery.min.js"><\/script>')</script>
 
   <script src="assets/js/scripts.min.js"></script>
 

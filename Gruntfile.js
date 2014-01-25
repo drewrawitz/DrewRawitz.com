@@ -7,7 +7,7 @@ module.exports = function(grunt) {
      * Set project info
      */
     project: {
-      app: ['app'],
+      app: ['public'],
       css: ['<%= project.app %>/assets/css'],
       sass: ['<%= project.app %>/assets/scss'],
       images: ['<%= project.app %>/assets/images'],
