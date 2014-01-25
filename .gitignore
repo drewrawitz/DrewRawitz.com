@@ -3,7 +3,7 @@
 # @author Drew Rawitz
 
 ## Custom
-app/config.php
+public/config.php
 
 ## Node.js
 lib-cov
@@ -21,7 +21,7 @@ npm-debug.log
 node_modules
 
 ## Bower
-app/assets/js/vendor
+public/libs
 
 ## Sass
 .sass-cache
