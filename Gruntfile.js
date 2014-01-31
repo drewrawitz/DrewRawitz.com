@@ -36,7 +36,7 @@ module.exports = function(grunt) {
      */
     bower: {
       dist: {
-        dest: '<%= project.js %>/vendor/'
+        dest: '<%= project.app %>/libs/'
       }
     },
 
