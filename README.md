@@ -7,6 +7,15 @@ The personal website of Drew Rawitz.
 * Homepage: [drewrawitz.com](http://www.drewrawitz.com)
 * Twitter: [@drewrawitz](http://twitter.com/drewrawitz)
 
+## Cron Jobs
+I have one cron job running every hour which executes my instagram feed API and saves the full-size and the thumbnail version of any new images.
+
+`wget -O - http://www.drewrawitz.com/scripts/instagram/feed.php`
+
+## Roadmap
+* Responsive!
+* Add Cache Busting to my CSS/JS files - Grunt Task
+* Get a blog set up using Jekyll
 
 ## License
 
