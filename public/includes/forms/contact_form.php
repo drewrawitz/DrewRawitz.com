@@ -1,5 +1,5 @@
 <?php
-require realpath(dirname(__FILE__).'/../../config.php');
+include realpath(dirname(__FILE__).'/../../config.php');
 require 'includes/scripts/class.phpmailer.php';
 
 function validate_required($field) {
@@ -11,7 +11,7 @@ function validate_required($field) {
 
 $errors = array();
 
-//If Submit
+// if the form has been submitted
 if(isset($_POST['submit'])) {
   
   $form_name     = htmlspecialchars($_POST['name']);
@@ -62,8 +62,8 @@ if(isset($_POST['submit'])) {
     echo "<p>Thank you <strong>$form_name</strong>, I'll be sure to get back to you as soon as possible!</p>";
     echo "</div>";
 
-  }//end if no errors
-}//endif submit
+  }
+}
 
 if(!isset($_POST['submit']) || array_filter($errors)) {
 
