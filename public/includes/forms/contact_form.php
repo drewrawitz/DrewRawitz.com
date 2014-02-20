@@ -1,5 +1,5 @@
 <?php
-include realpath(dirname(__FILE__).'/../../config.php');
+@include realpath(dirname(__FILE__).'/../../config.php');
 require 'includes/scripts/class.phpmailer.php';
 
 function validate_required($field) {
