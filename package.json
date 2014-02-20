@@ -25,6 +25,7 @@
     "matchdep": "*"
   },
   "scripts": {
-    "postinstall": "node_modules/.bin/bower install && chmod +x public/scripts/instagram/feed.php && php -f public/scripts/instagram/feed.php"
+    //"postinstall": "node_modules/.bin/bower install && chmod +x public/scripts/instagram/feed.php && php -f public/scripts/instagram/feed.php"
+     "postinstall": "node_modules/.bin/bower install"
   }
 }
