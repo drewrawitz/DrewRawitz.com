@@ -1,12 +1,13 @@
 <?php
   // require our functions file before we begin
-  require("functions.php");
+  require(dirname(__FILE__)."/functions.php");
 
-  // define instagram settings
+  // define some settings
+  define("BASE_DIR", realpath(dirname(__FILE__).'/../..'));
   define("INSTAGRAM_ID", "37768681");
   define("ACCESS_TOKEN", "37768681.04d79f8.6f019b7ab5da41afaad35c7a6889e397");
   define("PHOTO_COUNT", 50);
-  define("IMAGE_PATH", "../../assets/images/instagram");
+  define("IMAGE_PATH", BASE_DIR."/assets/images/instagram");
 
   // create our empty arrays
   $feed_recent_array = array();
