@@ -90,7 +90,7 @@
           <li><span class="technologies-jquery"></span></li>
           <li><span class="technologies-git"></span></li>
           <li><span class="technologies-sass"></span></li>
-          <li><span class="technologies-compass"></span></li>
+          <li><span class="technologies-bower"></span></li>
           <li><span class="technologies-grunt"></span></li>
           <li><span class="technologies-browsers"></span></li>
           <li><span class="technologies-responsive"></span></li>
