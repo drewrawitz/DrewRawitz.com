@@ -107,7 +107,12 @@
 
       <section id="projects">
         <h2 class="lines"><span>Projects</span></h2>
-        <p class="center">Coming Soon..</p>
+        <p class="center">
+          <a href="https://github.com/drewrawitz/DrewRawitz.com" target="_blank" class="btn btn-light">
+            <i class="icon-github-circled"></i>
+            <span>View Website Source on Github</span>
+          </a>
+        </p>
       </section>
 
       <section id="contact">

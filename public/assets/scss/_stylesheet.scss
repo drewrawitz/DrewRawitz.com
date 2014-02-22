@@ -75,6 +75,27 @@ blockquote {
   text-align: center;
 }
 
+.btn {
+  text-decoration: none;
+  color: inherit;
+  padding: 7px 20px;
+  margin: 0;
+  display: inline-block;
+  border-radius: 5px;
+  @include transition-property(background);
+  @include transition-duration(0.2s);
+
+  &.btn-light {
+    background: #fff;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
 .block-link {
   @include border-radius(10px);
   @include transition-property(color);
@@ -357,6 +378,20 @@ blockquote {
   p {
     width: 65%;
     margin: auto;
+  }
+}
+
+#projects {
+  .btn { 
+    margin-top: 3px;
+    padding-left: 10px;
+    padding-right: 13px;
+
+    i {
+      font-size: 23px;
+      position: relative;
+      top: 2px;
+    }
   }
 }
 
