@@ -115,7 +115,7 @@ module.exports = (grunt) ->
 
       livereload:
         options:
-          livereload: true
+          livereload: false
 
         files: ["<%= project.css %>/global.min.css"]
 
