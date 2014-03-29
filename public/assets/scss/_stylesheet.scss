@@ -173,6 +173,14 @@ blockquote {
     }
   }
 
+  .profile-pic {
+    img {
+      border-radius: 50%;
+      border: 2px solid #fff;
+      margin-bottom: 12px;
+    }
+  }
+
   .tagline {
     font-size: 13px;
     color: $secondary-color;

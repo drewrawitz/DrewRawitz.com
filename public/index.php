@@ -20,6 +20,9 @@
 
   <aside class="sidebar primary-sidebar">
     <header class="logo">
+      <div class="profile-pic">
+        <a href="index.php#home" data-target="#home"><img src="assets/images/profile_pic.jpg" width="100" height="100"></a>
+      </div>
       <a href="index.php#home" data-target="#home">
         <h2>Drew Rawitz</h2>
         <span class="tagline">Web Enthusiast</span>
@@ -37,10 +40,6 @@
     <div class="sidebar-widget">
       <h2 class="pull-left">Instagram</h2> <i class="ig-reload icon-arrows-cw"></i>
       <ul class="instagram-feed"></ul>
-    </div>
-    <div class="sidebar-widget">
-      <h2>Resume</h2>
-      <a href="#" class="block-link"> <i class="icon-download"></i> Download my Resume</a>
     </div>
     <footer class="primary-footer">
       <ul class="social_icons">
