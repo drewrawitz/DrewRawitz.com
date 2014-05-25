@@ -228,6 +228,7 @@ blockquote {
     flex-flow: row wrap;
     list-style: none;
     padding: 0;
+    margin-bottom: 25px;
 
   li {
     border-radius: 50%;
@@ -430,4 +431,27 @@ blockquote {
       color: #fff;
     }
   }
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style-type: none;
+
+    li {
+      margin: 5px;
+      padding: 10px;
+      background: white;
+      box-shadow: 0 0 3px #ccc;
+
+      &:hover {
+        box-shadow: 0 0 10px #acacac;
+        cursor: pointer;
+      }
+
+      span {
+        display: block;
+      }
+    }
 }
