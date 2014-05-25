@@ -1,4 +1,4 @@
-# DrewRawitz.com [![wercker status](https://app.wercker.com/status/f166292c96dad8dff38bd12128f4aee7/s/ "wercker status")](https://app.wercker.com/project/bykey/f166292c96dad8dff38bd12128f4aee7) [![Build Status](https://travis-ci.org/drewrawitz/DrewRawitz.com.png?branch=master)](https://travis-ci.org/drewrawitz/DrewRawitz.com)   [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# DrewRawitz.com [![wercker status](https://app.wercker.com/status/f166292c96dad8dff38bd12128f4aee7/s/ "wercker status")](https://app.wercker.com/project/bykey/f166292c96dad8dff38bd12128f4aee7) [![Build Status](https://travis-ci.org/drewrawitz/DrewRawitz.com.png?branch=master)](https://travis-ci.org/drewrawitz/DrewRawitz.com)   [![built with gulp](http://gulpjs.com/img/builtwith.png)]
 
 The personal website of Drew Rawitz.
 
@@ -13,7 +13,6 @@ I have one cron job running every hour which executes my instagram feed API and 
 
 ## Roadmap
 * Responsive!
-* Add Cache Busting to my CSS/JS files - Grunt Task
 * Get a blog set up using Jekyll
 
 ## License
