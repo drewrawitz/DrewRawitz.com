@@ -57,8 +57,8 @@ if(isset($_POST['submit'])) {
       echo $e->errorMessage();
     }
 
-    echo "<div id=\"email_success\">";
-    echo "<h3><i class=\"icon-check\"></i> Email Sent Successfully!</h3>";
+    echo "<div class=\"email-success\">";
+    echo "<h3>Email Sent Successfully!</h3>";
     echo "<p>Thank you <strong>$form_name</strong>, I'll be sure to get back to you as soon as possible!</p>";
     echo "</div>";
 
