@@ -1,4 +1,4 @@
-# DrewRawitz.com [![wercker status](https://app.wercker.com/status/f166292c96dad8dff38bd12128f4aee7/s/ "wercker status")](https://app.wercker.com/project/bykey/f166292c96dad8dff38bd12128f4aee7) [![Build Status](https://travis-ci.org/drewrawitz/DrewRawitz.com.png?branch=master)](https://travis-ci.org/drewrawitz/DrewRawitz.com)   [![built with gulp](http://gulpjs.com/img/builtwith.png)]
+# DrewRawitz.com [![wercker status](https://app.wercker.com/status/f166292c96dad8dff38bd12128f4aee7/s/ "wercker status")](https://app.wercker.com/project/bykey/f166292c96dad8dff38bd12128f4aee7) [![Build Status](https://travis-ci.org/drewrawitz/DrewRawitz.com.png?branch=master)](https://travis-ci.org/drewrawitz/DrewRawitz.com)
 
 The personal website of Drew Rawitz.
 
