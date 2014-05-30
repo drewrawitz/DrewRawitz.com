@@ -13,7 +13,8 @@ var autoprefixer = require('gulp-autoprefixer'),
     livereload = require('gulp-livereload'),
     newer = require('gulp-newer'),
     clean = require('gulp-clean'),
-    spritesmith = require('gulp.spritesmith');
+    spritesmith = require('gulp.spritesmith'),
+    runSequence = require('run-sequence');
 
 // Define some project variables
 var destApp = 'public',
@@ -44,9 +45,9 @@ function srcFiles(path) {
 // Styles task
 gulp.task('styles', function() {
     return gulp.src(''+srcSASS+'/styles.scss')
-      .pipe(sass({ style: 'expanded' }))
+      .pipe(sass({ style: 'compact', sourcemap: true }))
       .pipe(autoprefixer('last 2 version'))
-      .pipe(minifycss())
+      //.pipe(minifycss())
       .pipe(gulp.dest(destCSS))
       .pipe(notify({ message: 'Styles task complete' }));
 });
@@ -102,7 +103,9 @@ gulp.task('sprite', function () {
 
 
 // Default task
-gulp.task('default', ['styles', 'scripts', 'images', 'copy']);
+gulp.task('default', function(cb) {
+  runSequence(['styles', 'scripts', 'images'],'copy',cb);
+});
 
 // Watch
 gulp.task('watch', function() {
