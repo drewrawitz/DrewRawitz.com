@@ -343,6 +343,14 @@ blockquote { background: white; background: rgba(255, 255, 255, 0.9); position: 
 .email-success h3, .email-success p { margin: 0; }
 
 .technologies { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; list-style-type: none; }
-.technologies li { margin: 5px; padding: 10px; background: white; box-shadow: 0 0 3px #ccc; }
+.technologies li { position: relative; width: 120px; height: 120px; margin: 5px; background: white; box-shadow: 0 0 3px #ccc; overflow: hidden; }
 .technologies li:hover { box-shadow: 0 0 10px #acacac; cursor: pointer; }
-.technologies li span { display: block; }
+.technologies li:hover > span { opacity: 0.08; }
+.technologies li:hover .technologies-text { opacity: 1; }
+.technologies li:hover .technologies-text h3 { margin: 0; line-height: 1.1; }
+.technologies li:hover .technologies-text p { font-size: 12px; font-size: 0.75rem; line-height: 1.1; margin: 5px 0 0 0; }
+.technologies li:hover .technologies-text .link { font-size: 10px; font-size: 0.625rem; }
+.technologies li:hover .technologies-text span { opacity: 1; }
+.technologies li > span { display: block; -webkit-transition: all .3s; transition: all .3s; margin: 10px; }
+.technologies .technologies-text { position: absolute; top: 0; left: 0; display: table; height: 100%; width: 100%; opacity: 0; -webkit-transition: all .3s; transition: all .3s; }
+.technologies .technologies-text span { width: 100px; display: table-cell; vertical-align: middle; padding: 10px; text-align: center; opacity: 0; }

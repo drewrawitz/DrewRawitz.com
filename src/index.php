@@ -83,24 +83,164 @@
         <p class="center">I use the following technologies and applications as part of my development.</p>
 
         <ul class="technologies">
-          <li><span class="technologies-apple"></span></li>
-          <li><span class="technologies-html5"></span></li>
-          <li><span class="technologies-css3"></span></li>
-          <li><span class="technologies-jquery"></span></li>
-          <li><span class="technologies-git"></span></li>
-          <li><span class="technologies-sass"></span></li>
-          <li><span class="technologies-yeoman"></span></li>
-          <li><span class="technologies-bower"></span></li>
-          <li><span class="technologies-grunt"></span></li>
-          <li><span class="technologies-gulp"></span></li>
-          <li><span class="technologies-vagrant"></span></li>
-          <li><span class="technologies-browsers"></span></li>
-          <li><span class="technologies-responsive"></span></li>
-          <li><span class="technologies-photoshop"></span></li>
-          <li><span class="technologies-php"></span></li>
-          <li><span class="technologies-mysql"></span></li>
-          <li><span class="technologies-wordpress"></span></li>
-          <li><span class="technologies-magento"></span></li>
+          <li>
+            <span class="technologies-apple"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Apple</h3>
+                <p>15" Macbook Pro Retina Display</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-html5"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>HTML5</h3>
+                <p>Standards-compliant, semantic markup</p>
+                <p><a href="http://html5please.com/" class="link" target="_blank">html5please.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-css3"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>CSS3</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-jquery"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Javascript /jQuery</h3>
+                <p><a href="http://jquery.com" class="link" target="_blank">jquery.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-git"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Git</h3>
+                <p>Version Control System</p>
+                <p><a href="http://git-scm.com" class="link" target="_blank">git-scm.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-sass"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>SASS</h3>
+                <p>CSS Pre-processor</p>
+                <p><a href="http://sass-lang.com/" class="link" target="_blank">sass-lang.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-yeoman"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Yeoman</h3>
+                <p>Project Scaffolding</p>
+                <p><a href="http://yeoman.io/" class="link" target="_blank">yeoman.io</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-bower"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Bower</h3>
+                <p>Front-end Package Manager</p>
+                <p><a href="http://bower.io/" class="link" target="_blank">bower.io</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-grunt"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Grunt</h3>
+                <p>Javascript Task Runner</p>
+                <p><a href="http://gruntjs.com/" class="link" target="_blank">gruntjs.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-gulp"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Gulp</h3>
+                <p>Streaming Build System</p>
+                <p><a href="http://gulpjs.com/" class="link" target="_blank">gulpjs.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-vagrant"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Vagrant</h3>
+                <p>Development environments</p>
+                <p><a href="http://vagrantup.com/" class="link" target="_blank">vagrantup.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-browsers"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Cross Browser Compatibility</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-responsive"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Responsive Web Design</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-php"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>PHP</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-mysql"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>MySQL</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-wordpress"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Wordpress</h3>
+                <p>Content Management System</p>
+                <p><a href="http://wordpress.com/" class="link" target="_blank">wordpress.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="technologies-magento"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Magento</h3>
+                <p>E-Commerce Platform</p>
+                <p><a href="http://magento.com/" class="link" target="_blank">magento.com</a></p>
+              </span>
+            </div>
+          </li>
         </ul>
       </section>
 

@@ -450,18 +450,69 @@ blockquote {
     list-style-type: none;
 
     li {
+      position: relative;
+      width: 120px;
+      height: 120px;
       margin: 5px;
-      padding: 10px;
       background: white;
       box-shadow: 0 0 3px #ccc;
+      overflow: hidden;
 
       &:hover {
         box-shadow: 0 0 10px #acacac;
         cursor: pointer;
+
+        > span {
+          opacity: 0.08;
+        }
+
+        .technologies-text {
+          opacity: 1;
+
+          h3 {
+            margin: 0;
+            line-height: 1.1;
+          }
+
+          p {
+            @include font-size(12px);
+            line-height: 1.1;
+            margin: 5px 0 0 0;
+          }
+
+          .link {
+            @include font-size(10px);
+          }
+
+          span {
+            opacity: 1;
+          }
+        }
       }
 
-      span {
+      > span {
         display: block;
+        transition: all .3s;
+        margin: 10px;
+      }
+    }
+    .technologies-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: table;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all .3s;
+
+      span {
+        width: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+        text-align: center;
+        opacity: 0;
       }
     }
 }
