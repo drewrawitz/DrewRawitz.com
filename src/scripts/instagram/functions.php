@@ -35,4 +35,11 @@
       header("Content-Type: image/jpeg");
       imagejpeg($dest_image,$pathToThumbs . $filename,80);
   }
+
+  // function to check if we are on localhost
+  function is_localhost() {
+    $whitelist = array( '127.0.0.1', '::1' );
+    if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
+        return true;
+}
 ?>
