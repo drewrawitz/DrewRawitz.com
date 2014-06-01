@@ -235,17 +235,19 @@ a.link:hover { background: #b51b00; text-decoration: none; color: white; text-sh
 
 .technologies-mysql { background-image: url(../images/technologies-sprite.png); background-position: 0px -1100px; width: 100px; height: 100px; }
 
-.technologies-php { background-image: url(../images/technologies-sprite.png); background-position: 0px -1200px; width: 100px; height: 100px; }
+.technologies-photoshop { background-image: url(../images/technologies-sprite.png); background-position: 0px -1200px; width: 100px; height: 100px; }
 
-.technologies-responsive { background-image: url(../images/technologies-sprite.png); background-position: 0px -1300px; width: 100px; height: 100px; }
+.technologies-php { background-image: url(../images/technologies-sprite.png); background-position: 0px -1300px; width: 100px; height: 100px; }
 
-.technologies-sass { background-image: url(../images/technologies-sprite.png); background-position: 0px -1400px; width: 100px; height: 100px; }
+.technologies-responsive { background-image: url(../images/technologies-sprite.png); background-position: 0px -1400px; width: 100px; height: 100px; }
 
-.technologies-vagrant { background-image: url(../images/technologies-sprite.png); background-position: 0px -1500px; width: 100px; height: 100px; }
+.technologies-sass { background-image: url(../images/technologies-sprite.png); background-position: 0px -1500px; width: 100px; height: 100px; }
 
-.technologies-wordpress { background-image: url(../images/technologies-sprite.png); background-position: 0px -1600px; width: 100px; height: 100px; }
+.technologies-vagrant { background-image: url(../images/technologies-sprite.png); background-position: 0px -1600px; width: 100px; height: 100px; }
 
-.technologies-yeoman { background-image: url(../images/technologies-sprite.png); background-position: 0px -1700px; width: 100px; height: 100px; }
+.technologies-wordpress { background-image: url(../images/technologies-sprite.png); background-position: 0px -1700px; width: 100px; height: 100px; }
+
+.technologies-yeoman { background-image: url(../images/technologies-sprite.png); background-position: 0px -1800px; width: 100px; height: 100px; }
 
 /* ========================================================================== Partials: Layout ========================================================================== */
 * { -moz-box-sizing: border-box; box-sizing: border-box; font-smooth: always; -webkit-font-smoothing: antialiased; }
