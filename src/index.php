@@ -10,7 +10,10 @@
   <link href="//www.google-analytics.com" rel="dns-prefetch">
   <link href="//ajax.googleapis.com" rel="dns-prefetch">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+
+  <!-- rev-hash -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- end -->
 
   <script src="libs/modernizr/modernizr.js"></script>
 </head>

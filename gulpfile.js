@@ -14,7 +14,8 @@ var autoprefixer = require('gulp-autoprefixer'),
     newer = require('gulp-newer'),
     clean = require('gulp-clean'),
     spritesmith = require('gulp.spritesmith'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    revHash = require('gulp-rev-hash');
 
 // Define some project variables
 var destApp = 'public',
@@ -84,6 +85,13 @@ gulp.task('cleanApp',function() {
     .pipe(clean())
 });
 
+// Cache-busting our assets
+gulp.task('rev-hash', function () {
+    gulp.src(srcApp+'/index.php')
+        .pipe(revHash({assetsDir: destApp}))
+        .pipe(gulp.dest(destApp));
+});
+
 // Sprite Generator task
 gulp.task('sprite', function () {
   var spriteData = gulp.src(srcImages+'/technologies/*.png').pipe(spritesmith({
@@ -104,7 +112,7 @@ gulp.task('sprite', function () {
 
 // Default task
 gulp.task('default', function(cb) {
-  runSequence(['styles', 'scripts', 'images'],'copy',cb);
+  runSequence(['styles', 'scripts', 'images'],'copy','rev-hash',cb);
 });
 
 // Watch
