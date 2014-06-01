@@ -12,7 +12,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
 
   <!-- rev-hash -->
-<link rel="stylesheet" href="assets/css/styles.css?v=3bf4f8bcbb1ca9f1f943ad3840ba24e7"/>
+<link rel="stylesheet" href="assets/css/styles.css?v=c85202bea9e0f3a230fdb49716ae46d8"/>
 <!-- end -->
 
   <script src="libs/modernizr/modernizr.js"></script>
