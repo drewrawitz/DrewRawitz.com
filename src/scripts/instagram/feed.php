@@ -2,11 +2,8 @@
   // require our functions file before we begin
   require(dirname(__FILE__)."/functions.php");
 
-  // our base directory changes if we are on localhost
-  $base_dir = (is_localhost()) ? realpath(dirname(__FILE__).'/../../../src' : realpath(dirname(__FILE__).'/../..';
-
   // define some settings
-  define("BASE_DIR", $base_dir));
+  define("BASE_DIR", realpath(dirname(__FILE__).'/../../../src'));
   define("INSTAGRAM_ID", "37768681");
   define("ACCESS_TOKEN", "37768681.04d79f8.6f019b7ab5da41afaad35c7a6889e397");
   define("PHOTO_COUNT", -1);

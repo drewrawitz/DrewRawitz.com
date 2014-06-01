@@ -118,7 +118,7 @@ gulp.task('default', function(cb) {
 // Watch
 gulp.task('watch', function() {
   // Watch .scss files
-  gulp.watch(''+srcSASS+'/**/*.scss', ['styles']);
+  gulp.watch(''+srcSASS+'/**/*.scss', ['styles', 'rev-hash']);
 
   // Watch .js files
   gulp.watch(''+srcJS+'/**/*.js', ['scripts']);

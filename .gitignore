@@ -5,8 +5,6 @@
 ## Custom
 public/config.php
 src/config.php
-public/assets/images/instagram/
-src/assets/images/instagram/
 
 ## Node.js
 lib-cov
