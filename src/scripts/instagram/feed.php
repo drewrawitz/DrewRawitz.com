@@ -3,10 +3,10 @@
   require(dirname(__FILE__)."/functions.php");
 
   // define some settings
-  define("BASE_DIR", realpath(dirname(__FILE__).'/../..'));
+  define("BASE_DIR", realpath(dirname(__FILE__).'/../../../src'));
   define("INSTAGRAM_ID", "37768681");
   define("ACCESS_TOKEN", "37768681.04d79f8.6f019b7ab5da41afaad35c7a6889e397");
-  define("PHOTO_COUNT", 50);
+  define("PHOTO_COUNT", -1);
   define("IMAGE_PATH", BASE_DIR."/assets/images/instagram");
 
   // create our empty arrays
