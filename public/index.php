@@ -279,7 +279,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="libs/jquery/jquery.min.js"><\/script>')</script>
 
-  <script src="assets/js/scripts.min.js"></script>
+  <!-- rev-hash -->
+<script src="assets/js/scripts.min.js?v=1a87416b85d3c097ff6e02de72b44c64"></script>
+<!-- end -->
 
   <script>
     (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
@@ -288,7 +290,7 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-34472559-1');
     ga('send', 'pageview');
-    </script>
+  </script>
 
 </body>
 </html>
