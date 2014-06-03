@@ -14,8 +14,6 @@
   <!-- rev-hash -->
   <link rel="stylesheet" href="assets/css/styles.css">
   <!-- end -->
-
-  <script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
   <div class="flex-container">
