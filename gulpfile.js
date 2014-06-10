@@ -15,7 +15,9 @@ var autoprefixer = require('gulp-autoprefixer'),
     clean = require('gulp-clean'),
     spritesmith = require('gulp.spritesmith'),
     runSequence = require('run-sequence'),
-    revHash = require('gulp-rev-hash');
+    revHash = require('gulp-rev-hash'),
+    rsync = require('rsyncwrapper').rsync;
+    secrets = require('./secrets.json');
 
 // Define some project variables
 var destApp = 'public',
@@ -107,6 +109,23 @@ gulp.task('sprite', function () {
   }));
   spriteData.img.pipe(gulp.dest(srcImages+'/'));
   spriteData.css.pipe(gulp.dest(srcSASS+'/'));
+});
+
+// Deploy task
+gulp.task('deploy', function() {
+  rsync({
+    src: 'public/',
+    dest: secrets.servers.live.rsyncDest,
+    ssh: true,
+    recursive: true,
+    syncDest: true,
+  }, function(error, stdout, stderr, cmd) {
+    if(error) {
+      console.log(error.message);
+    } else {
+      console.log('Successfully Deployed!');
+    }
+  });
 });
 
 
