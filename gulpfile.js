@@ -128,7 +128,6 @@ gulp.task('deploy', function() {
   });
 });
 
-
 // Default task
 gulp.task('default', function(cb) {
   runSequence(['styles', 'scripts', 'images'],'copy','rev-hash',cb);
