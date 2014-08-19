@@ -10,6 +10,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
+    header  = require('gulp-header'),
     livereload = require('gulp-livereload'),
     newer = require('gulp-newer'),
     clean = require('gulp-clean'),
@@ -17,7 +18,8 @@ var autoprefixer = require('gulp-autoprefixer'),
     runSequence = require('run-sequence'),
     revHash = require('gulp-rev-hash'),
     rsync = require('rsyncwrapper').rsync,
-    secrets = require('./secrets.json');
+    secrets = require('./secrets.json'),
+    package = require('./package.json');
 
 // Define some project variables
 var destApp = 'public',
@@ -28,6 +30,18 @@ var destApp = 'public',
     srcSASS = srcApp + '/assets/scss',
     srcJS = srcApp + '/assets/js',
     srcImages = srcApp + '/assets/images';
+
+// Banner that gets injected at the top of my assets
+var banner = [
+  '/*!\n' +
+  ' * <%= package.title %>\n' +
+  ' * <%= package.url %>\n' +
+  ' * @author <%= package.author %> <<%= package.email %>>\n' +
+  ' * @version <%= package.version %>\n' +
+  ' * Copyright ' + new Date().getFullYear() + '. <%= package.license %> licensed.\n' +
+  ' */',
+  '\n'
+].join('');
 
 // Define my src files
 function srcFiles(path) {
@@ -62,6 +76,7 @@ gulp.task('scripts', function() {
       ])
       .pipe(concat('scripts.min.js'))
       .pipe(uglify())
+      .pipe(header(banner, { package : package }))
       .pipe(gulp.dest(destJS))
       .pipe(notify({ message: 'Scripts task complete' }));
 });
@@ -97,6 +112,7 @@ gulp.task('rev-hash', function () {
 gulp.task('minify', function() {
     return gulp.src(destCSS+'/styles.css')
       .pipe(minifycss())
+      .pipe(header(banner, { package : package }))
       .pipe(gulp.dest(destCSS))
       .pipe(notify({ message: 'Minification task complete' }));
 });
