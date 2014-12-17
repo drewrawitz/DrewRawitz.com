@@ -11,27 +11,34 @@
 
   // create our empty arrays
   $feed_recent_array = array();
-  $recent_folder_array = array();
+  $json_feed_data = array();
 
   // grab the instagram feed
   $feed_url = "https://api.instagram.com/v1/users/".INSTAGRAM_ID."/media/recent/?count=".PHOTO_COUNT."&access_token=".ACCESS_TOKEN."";
   $data = json_decode(file_get_contents($feed_url, true));
 
   // loop through the feed and put the items in an array
+  $i = 0;
   foreach($data->data as $item) :
-    $feed_recent_array['full'][] = $item->images->standard_resolution->url;
-    $feed_recent_array['base'][] = basename($item->images->standard_resolution->url);
+    $i++;
+    $feed_recent_array['full'][$i]['full_img'] = $item->images->standard_resolution->url;
+    $feed_recent_array['full'][$i]['base_img'] = basename($item->images->standard_resolution->url);
+    $feed_recent_array['full'][$i]['description'] = ($item->caption) ? $item->caption->text : "";
   endforeach;
 
   // loop through our array
   foreach($feed_recent_array['full'] as $item) :
 
-    // if there's a new image, let's save it to the recent folder
-    if(!glob(IMAGE_PATH."/*".basename($item))) {
-      $file_name = basename($item);
+    $json_feed_data[] = $item;
 
-      save_image($item,IMAGE_PATH."/".$file_name);
+    // if there's a new image, let's save it to the recent folder
+    if(!glob(IMAGE_PATH."/*".basename($item['full_img']))) {
+      $file_name = basename($item['full_img']);
+
+      save_image($item['full_img'],IMAGE_PATH."/".$file_name);
       createThumbnail($file_name, IMAGE_PATH."/", IMAGE_PATH."/thumbs/");
     }
   endforeach;
+
+  file_put_contents(BASE_DIR."/instagram.json", json_encode($json_feed_data));
 ?>
