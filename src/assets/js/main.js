@@ -18,8 +18,8 @@ $(document).ready(function() {
         $('.ig-reload').removeClass('animate-spin');
 
         $(".fancybox").fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none'
+          openEffect  : 'elastic',
+          closeEffect : 'elastic'
         });
 
       });
