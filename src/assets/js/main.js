@@ -11,18 +11,17 @@ $(document).ready(function() {
       data.success(function(realData) {
         var html = '';
         jQuery.each( realData, function( i, val ) {
-          html += '<li><a href="assets/images/instagram/'+val+'" rel="lightbox"><img src="assets/images/instagram/thumbs/'+val+'"></a></li>';
+          html += '<li><a href="assets/images/instagram/'+val+'" class="fancybox" rel="lightbox"><img src="assets/images/instagram/thumbs/'+val+'"></a></li>';
         });
 
         $(html).hide().appendTo(".instagram-feed").fadeIn(1000);
         $('.ig-reload').removeClass('animate-spin');
 
-        $('[rel=lightbox]').lightBox({
-          imageLoading: 'assets/images/lightbox/lightbox-ico-loading.gif',
-          imageBtnClose: 'assets/images/lightbox/lightbox-btn-close.gif',
-          imageBtnPrev: 'assets/images/lightbox/lightbox-btn-prev.gif',
-          imageBtnNext: 'assets/images/lightbox/lightbox-btn-next.gif'
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
         });
+
       });
     }
 
