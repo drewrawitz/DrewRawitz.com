@@ -48,6 +48,7 @@ function srcFiles(path) {
   var srcFiles = [
     path+'/.htaccess',
     path+'/*.php',
+    path+'/*.json',
     path+'/assets/font/**',
     path+'/libs/**',
     path+'/scripts/**',
@@ -90,7 +91,7 @@ gulp.task('images', function() {
 });
 
 // Copy files from src to public
-gulp.task('copy', ['cleanApp'], function() {
+gulp.task('copy', function() {
   return gulp.src(srcFiles(srcApp), { base: './src' })
     .pipe(gulp.dest(destApp))
 });
