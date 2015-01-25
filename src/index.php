@@ -258,9 +258,7 @@
 
       <section id="contact">
         <h2 class="lines"><span>Contact Me</span></h2>
-        <p class="center">Do you want to talk about a future project, or just want to say hello? Let's get in touch! You can get in touch with me via Twitter <a href="http://www.twitter.com/drewrawitz" class="link" target="_blank">@DrewRawitz</a> or by filling out the form below!</p>
-
-        <?php include("includes/forms/contact_form.php"); ?>
+        <p class="center">Do you want to talk about a future project, or just want to say hello? Let's get in touch! You can get in touch with me via Twitter <a href="http://www.twitter.com/drewrawitz" class="link" target="_blank">@DrewRawitz</a> or e-mailing me at <a href="mailto:email@drewrawitz.com" class="link">email@drewrawitz.com</a></p>
       </section>
     </div>
   </div>
