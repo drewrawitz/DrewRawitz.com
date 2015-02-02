@@ -3,33 +3,33 @@ var gulp = require('gulp');
 
 // Include our plugins
 var autoprefixer = require('gulp-autoprefixer'),
-    sass = require('gulp-ruby-sass'),
-    minifycss = require('gulp-minify-css'),
-    uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
-    notify = require('gulp-notify'),
-    header  = require('gulp-header'),
-    livereload = require('gulp-livereload'),
-    newer = require('gulp-newer'),
-    clean = require('gulp-clean'),
-    spritesmith = require('gulp.spritesmith'),
-    runSequence = require('run-sequence'),
-    revHash = require('gulp-rev-hash'),
-    rsync = require('rsyncwrapper').rsync,
-    secrets = require('./secrets.json'),
-    package = require('./package.json');
+    sass         = require('gulp-ruby-sass'),
+    minifycss    = require('gulp-minify-css'),
+    uglify       = require('gulp-uglify'),
+    imagemin     = require('gulp-imagemin'),
+    rename       = require('gulp-rename'),
+    concat       = require('gulp-concat'),
+    notify       = require('gulp-notify'),
+    header       = require('gulp-header'),
+    livereload   = require('gulp-livereload'),
+    newer        = require('gulp-newer'),
+    clean        = require('gulp-clean'),
+    spritesmith  = require('gulp.spritesmith'),
+    runSequence  = require('run-sequence'),
+    revHash      = require('gulp-rev-hash'),
+    rsync        = require('rsyncwrapper').rsync,
+    secrets      = require('./secrets.json'),
+    package      = require('./package.json');
 
 // Define some project variables
-var destApp = 'public',
-    srcApp = 'src',
-    destCSS = destApp + '/assets/css',
-    destJS = destApp + '/assets/js',
+var destApp    = 'public',
+    srcApp     = 'src',
+    destCSS    = destApp + '/assets/css',
+    destJS     = destApp + '/assets/js',
     destImages = destApp + '/assets/images',
-    srcSASS = srcApp + '/assets/scss',
-    srcJS = srcApp + '/assets/js',
-    srcImages = srcApp + '/assets/images';
+    srcSASS    = srcApp + '/assets/scss',
+    srcJS      = srcApp + '/assets/js',
+    srcImages  = srcApp + '/assets/images';
 
 // Banner that gets injected at the top of my assets
 var banner = [
