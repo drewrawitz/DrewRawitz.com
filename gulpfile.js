@@ -9,7 +9,6 @@ var autoprefixer = require('gulp-autoprefixer'),
     imagemin     = require('gulp-imagemin'),
     rename       = require('gulp-rename'),
     concat       = require('gulp-concat'),
-    notify       = require('gulp-notify'),
     header       = require('gulp-header'),
     livereload   = require('gulp-livereload'),
     newer        = require('gulp-newer'),
@@ -66,7 +65,6 @@ gulp.task('styles', function() {
       .pipe(sass({ style: 'compact', sourcemap: true }))
       .pipe(autoprefixer('last 2 version'))
       .pipe(gulp.dest(destCSS))
-      .pipe(notify({ message: 'Styles task complete' }));
 });
 
 // Scripts task
@@ -79,7 +77,6 @@ gulp.task('scripts', function() {
       .pipe(uglify())
       .pipe(header(banner, { package : package }))
       .pipe(gulp.dest(destJS))
-      .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 // Images task
@@ -115,7 +112,6 @@ gulp.task('minify', function() {
       .pipe(minifycss())
       .pipe(header(banner, { package : package }))
       .pipe(gulp.dest(destCSS))
-      .pipe(notify({ message: 'Minification task complete' }));
 });
 
 // Sprite Generator task
