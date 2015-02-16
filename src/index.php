@@ -69,7 +69,7 @@
 
       <section id="about">
         <h2 class="lines"><span>About Me</span></h2>
-        <p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work for <a href="http://www.atlanticbt.com" class="link" target="_blank" rel="nofollow">Atlantic BT</a>, Raleigh's Largest Website &amp; Software Development Company.</p>
+        <p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work as a Front-End Developer for <a href="http://www.capstrat.com" class="link" target="_blank" rel="nofollow">Capstrat</a>, a strategic communications firm offering interactive, marketing communications, public affairs and public relations.</p>
         <p>My job involves doing what I love, <strong>developing</strong> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="#" class="link">resume</a>.</p>
 
         <div class="clear-left"></div>
