@@ -1,0 +1,64 @@
+/*==========================================================================
+  Typography
+  ==========================================================================*/
+
+@font-face {
+    font-family: 'Allan';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Allan Bold'), local('Allan-Bold'), url(http://themes.googleusercontent.com/static/fonts/allan/v4/HDuJMALbbJ3Ny_JtXeABSXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+  }
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+
+@mixin body-font {
+  font-family: 'Droid Sans', sans-serif;
+  @include font-size(14px);
+}
+
+@mixin heading-font {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+}
+
+@mixin logo-font {
+  font-family: 'Allan', sans-serif;
+  letter-spacing: normal;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+a {
+  &.link {
+    color: $link-color;
+    border-bottom: 1px dotted $link-color;
+    text-decoration: none;
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: 0.2s, 0.2s;
+    -webkit-transition-timing-function: linear, ease-in;
+
+    &:hover {
+      background: $link-color;
+      text-decoration: none;
+      color: white;
+      text-shadow: none;
+    }
+  }
+}

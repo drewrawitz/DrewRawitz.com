@@ -1,0 +1,38 @@
+{
+  "name": "drewrawitz",
+  "title": "DrewRawitz.com",
+  "description": "Front-End Developer in Raleigh, NC",
+  "author": "Drew Rawitz",
+  "email": "email@drewrawitz.com",
+  "url": "http://www.drewrawitz.com",
+  "copyright": "2013",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drewrawitz/DrewRawitz.com.git"
+  },
+  "devDependencies": {
+    "bower": "~1.3.9",
+    "gulp": "^3.6.2",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-clean": "~0.2.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-header": "^1.0.5",
+    "gulp-imagemin": "~2.2.0",
+    "gulp-livereload": "^1.5.0",
+    "gulp-minify-css": "^0.3.4",
+    "gulp-newer": "~0.3.0",
+    "gulp-notify": "~2.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-rev-hash": "0.0.2",
+    "gulp-ruby-sass": "^0.4.3",
+    "gulp-uglify": "^0.3.0",
+    "gulp.spritesmith": "^0.5.0",
+    "rsyncwrapper": "^0.4.0",
+    "run-sequence": "^0.3.6"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install"
+  }
+}
