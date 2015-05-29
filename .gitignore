@@ -7,6 +7,9 @@ public
 src/config.php
 secrets.json
 
+# Vagrant
+.vagrant
+
 ## Node.js
 lib-cov
 *.seed
