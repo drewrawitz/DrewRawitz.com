@@ -6,10 +6,6 @@ The personal website of Drew Rawitz.
 * Homepage: [drewrawitz.com](http://www.drewrawitz.com)
 * Twitter: [@drewrawitz](http://twitter.com/drewrawitz)
 
-## Roadmap
-* Responsive!
-* Get a blog set up using Jekyll
-
 ## License
 
 #### The MIT License (MIT)
