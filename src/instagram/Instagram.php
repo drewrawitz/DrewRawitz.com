@@ -72,7 +72,7 @@ class InstagramFeed
     $recent_media = $this->getUserMedia('self', $params['count']);
 
     # Let's build our Array
-    $this->buildArray($recent_media);
+    $this->buildArray($recent_media, $params['count']);
 
     # Let's download the images from that Array
     $this->saveImages();
@@ -81,24 +81,28 @@ class InstagramFeed
     $this->writeJSON();
   }
 
-  public function buildArray($data)
+  public function buildArray($data, $count)
   {
     # Loop through the different rows
     foreach($data->data as $item) :
 
-      $this->data_feed[] = array(
-        'full_image' => $item->images->standard_resolution->url,
-        'thumbnail_image' => $item->images->thumbnail->url,
-        'base' => basename($item->images->standard_resolution->url),
-        'description' => ($item->caption) ? $item->caption->text : ''
-      );
+      if(count($this->data_feed) < $count) :
+        $this->data_feed[] = array(
+          'full_image' => $item->images->standard_resolution->url,
+          'thumbnail_image' => $item->images->thumbnail->url,
+          'base' => basename($item->images->standard_resolution->url),
+          'description' => ($item->caption) ? $item->caption->text : ''
+        );
+      endif;
 
     endforeach;
 
     # Loop through the current function again with the next batch of photos
-    if(isset($data->pagination->next_url)) :
-      $next_url = json_decode(file_get_contents($data->pagination->next_url, true));
-      return $this->buildArray($next_url);
+    if(count($this->data_feed) < $count) :
+      if(isset($data->pagination->next_url)) :
+        $next_url = json_decode(file_get_contents($data->pagination->next_url, true));
+        return $this->buildArray($next_url, $count);
+      endif;
     endif;
 
     return $this->data_feed;
