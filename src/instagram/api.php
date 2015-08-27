@@ -8,6 +8,6 @@
 
   # Download the Photos
   $instagram->downloadPhotos(array(
-    'count' => 20
+    'count' => 200
   ));
 ?>
