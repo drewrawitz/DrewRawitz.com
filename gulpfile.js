@@ -3,7 +3,7 @@ var gulp = require('gulp');
 
 // Include our plugins
 var autoprefixer = require('gulp-autoprefixer'),
-    sass         = require('gulp-ruby-sass'),
+    sass         = require('gulp-sass'),
     minifycss    = require('gulp-minify-css'),
     uglify       = require('gulp-uglify'),
     imagemin     = require('gulp-imagemin'),
@@ -49,11 +49,9 @@ function srcFiles(path) {
   var srcFiles = [
     path+'/.htaccess',
     path+'/*.php',
-    path+'/*.json',
-    path+'/assets/font/**',
+    path+'/assets/font/**/*',
     path+'/libs/**',
-    path+'/instagram/**',
-    path+'/includes/**',
+    path+'/instagram/**/*',
     path+'/robots.txt',
     path+'/sitemap.xml'
   ];
@@ -64,7 +62,7 @@ function srcFiles(path) {
 // Styles task
 gulp.task('styles', function() {
     return gulp.src(srcSASS+'/styles.scss')
-      .pipe(sass({ style: 'compact', sourcemap: true }))
+      .pipe(sass())
       .pipe(autoprefixer('last 2 version'))
       .pipe(gulp.dest(destCSS))
 });
@@ -93,8 +91,16 @@ gulp.task('images', function() {
 // Copy files from src to public
 gulp.task('copy', function() {
   return gulp.src(srcFiles(srcApp), { base: './src' })
-    .pipe(replace(/{{instagramAccessToken}}/g, secrets.instagram.accessToken))
     .pipe(gulp.dest(destApp))
+});
+
+// Replace any strings
+gulp.task('replace', ['copy'], function() {
+  return gulp.src([
+      srcApp+'/instagram/*.php'
+    ])
+    .pipe(replace(/{{instagramAccessToken}}/g, secrets.instagram.accessToken))
+    .pipe(gulp.dest(destApp+'/instagram'));
 });
 
 // Clean out the public folder
@@ -154,7 +160,7 @@ gulp.task('deploy', function() {
 
 // Default task
 gulp.task('build', function(cb) {
-  runSequence(['styles', 'scripts', 'images'],'copy','rev-hash', 'minify',cb);
+  runSequence(['styles', 'scripts', 'images'],'replace','rev-hash', 'minify',cb);
 });
 
 // Watch
@@ -166,7 +172,7 @@ gulp.task('watch', function() {
   gulp.watch(srcJS+'/**/*.js', ['scripts']);
 
   // Watch PHP files
-  gulp.watch(srcFiles(srcApp), ['copy']);
+  gulp.watch(srcFiles(srcApp), ['replace']);
 
   // Watch image files
   gulp.watch(srcImages+'/**/*', ['images']);
