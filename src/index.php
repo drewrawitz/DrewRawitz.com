@@ -265,12 +265,11 @@
       <section id="projects">
         <h2 class="lines"><span>Projects</span></h2>
         <p class="center">
-          <a href="https://github.com/drewrawitz/DrewRawitz.com" target="_blank" class="btn btn-light">
+          <a href="https://github.com/drewrawitz" target="_blank" class="btn btn-light">
             <i class="icon-github-circled"></i>
-            <span>View Website Source on Github</span>
+            <span>View my GitHub page for my Open Source projects</span>
           </a>
         </p>
-        <p class="center"><em>More Open Source projects coming soon!</em></p>
       </section>
 
       <section id="contact">
