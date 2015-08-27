@@ -86,7 +86,7 @@ class InstagramFeed
     # Loop through the different rows
     foreach($data->data as $item) :
 
-      $this->data_feed[$item->id] = array(
+      $this->data_feed[] = array(
         'full_image' => $item->images->standard_resolution->url,
         'thumbnail_image' => $item->images->thumbnail->url,
         'base' => basename($item->images->standard_resolution->url),
@@ -96,12 +96,12 @@ class InstagramFeed
     endforeach;
 
     # Loop through the current function again with the next batch of photos
-    if($data->pagination->next_url) :
+    if(isset($data->pagination->next_url)) :
       $next_url = json_decode(file_get_contents($data->pagination->next_url, true));
       return $this->buildArray($next_url);
     endif;
 
-    return $data_feed;
+    return $this->data_feed;
   }
 
   public function saveImages()
