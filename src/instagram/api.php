@@ -3,7 +3,7 @@
 
   # Declare the InstagramFeed Class
   $instagram = new InstagramFeed(array(
-    'accessToken' => '37768681.04d79f8.6f019b7ab5da41afaad35c7a6889e397'
+    'accessToken' => '{{instagramAccessToken}}'
   ));
 
   # Download the Photos

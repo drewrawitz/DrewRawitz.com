@@ -15,6 +15,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     clean        = require('gulp-clean'),
     spritesmith  = require('gulp.spritesmith'),
     runSequence  = require('run-sequence'),
+    replace      = require('gulp-replace'),
     revHash      = require('gulp-rev-hash'),
     rsync        = require('rsyncwrapper').rsync,
     secrets      = require('./secrets.json'),
@@ -92,6 +93,7 @@ gulp.task('images', function() {
 // Copy files from src to public
 gulp.task('copy', function() {
   return gulp.src(srcFiles(srcApp), { base: './src' })
+    .pipe(replace(/{{instagramAccessToken}}/g, secrets.instagram.accessToken))
     .pipe(gulp.dest(destApp))
 });
 

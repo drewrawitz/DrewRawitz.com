@@ -25,6 +25,7 @@
     "gulp-newer": "~0.3.0",
     "gulp-notify": "~2.2.0",
     "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.5.4",
     "gulp-rev-hash": "0.0.2",
     "gulp-ruby-sass": "^0.4.3",
     "gulp-uglify": "^0.3.0",
