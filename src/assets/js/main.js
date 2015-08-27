@@ -11,7 +11,7 @@ $(document).ready(function() {
       function gotoPage(page) {
         var html = '';
         var offset = (page - 1) * showPerPage;
-        var dat = _.rest(data, offset).slice(offset, offset + showPerPage);
+        var dat = _.slice(data, offset, offset + showPerPage);
 
         _.forEach(dat, function(n, key) {
           html += '<li><a href="instagram/images/full/'+n.base+'" class="fancybox" rel="lightbox" title="'+n.description+'"><img src="instagram/images/thumbs/'+n.base+'" width="60" height="60"></a></li>';
