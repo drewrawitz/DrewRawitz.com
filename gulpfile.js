@@ -26,6 +26,7 @@ var destApp    = 'public',
     destCSS    = destApp + '/assets/css',
     destJS     = destApp + '/assets/js',
     destImages = destApp + '/assets/images',
+    bowerDir   = srcApp + '/libs',
     srcSASS    = srcApp + '/assets/scss',
     srcJS      = srcApp + '/assets/js',
     srcImages  = srcApp + '/assets/images';
@@ -70,6 +71,7 @@ gulp.task('styles', function() {
 // Scripts task
 gulp.task('scripts', function() {
     return gulp.src([
+        ''+bowerDir+'/lodash/lodash.js',
         ''+srcJS+'/plugins/*.js',
         ''+srcJS+'/main.js'
       ])
