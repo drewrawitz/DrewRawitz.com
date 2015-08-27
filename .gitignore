@@ -4,8 +4,9 @@
 
 ## Custom
 public
-src/config.php
 secrets.json
+src/instagram/images
+src/instagram/*.json
 
 # Vagrant
 .vagrant

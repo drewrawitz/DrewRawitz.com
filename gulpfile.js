@@ -50,7 +50,7 @@ function srcFiles(path) {
     path+'/*.json',
     path+'/assets/font/**',
     path+'/libs/**',
-    path+'/scripts/**',
+    path+'/instagram/**',
     path+'/includes/**',
     path+'/robots.txt',
     path+'/sitemap.xml'
