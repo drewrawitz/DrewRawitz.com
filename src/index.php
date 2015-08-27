@@ -39,9 +39,26 @@
       </nav>
       <div class="sidebar-block">
         <div class="sidebar-flex-container">
-          <h2 class="sidebar-block-heading sidebar-flex-item">Instagram</h2> <i class="ig-reload icon-arrows-cw sidebar-flex-item"></i>
+          <h2 class="sidebar-block-heading">Instagram</h2>
+          <div class="instagram-controls">
+            <!-- Shuffle button
+            <a href="#" class="ig-reload">
+              <i class="icon-arrows-cw"></i>
+            </a>
+            -->
+            <a href="#" class="ig-back disabled">
+              <i class="icon-left-open"></i>
+            </a>
+            <a href="#" class="ig-next">
+              <i class="icon-right-open"></i>
+            </a>
+          </div>
         </div>
         <ul class="instagram-feed"></ul>
+        <div class="sidebar-flex-container">
+          <small><strong>Sorted by:</strong> Most Recent</small>
+          <small><span class="currentPage"></span>/<span class="totalPages"></span></small>
+        </div>
       </div>
       <footer class="primary-footer">
         <ul class="social_icons">

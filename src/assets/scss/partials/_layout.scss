@@ -50,10 +50,20 @@ blockquote {
   }
 }
 
-.ig-reload {
-  &:hover {
-    cursor: pointer;
-    color: white;
+.instagram-controls {
+  a[class^="ig-"] {
+    color: inherit;
+    text-decoration: none;
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+    }
   }
 }
 
@@ -81,6 +91,7 @@ blockquote {
 
         .sidebar-block-heading {
             color: white;
+            display: inline-block;
         }
     }
 
@@ -220,6 +231,7 @@ blockquote {
 .primary-footer {
     @include font-size(11px);
     text-align: center;
+    margin-top: 50px;
 }
 
 .social_icons {
