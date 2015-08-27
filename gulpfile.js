@@ -142,7 +142,7 @@ gulp.task('sprite', function () {
 });
 
 // Deploy task
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build'], function() {
   rsync({
     src: 'public/',
     dest: secrets.servers.live.rsyncDest,
