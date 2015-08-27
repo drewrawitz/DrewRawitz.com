@@ -4,7 +4,7 @@ $(document).ready(function() {
       var currentPage = 1;
       var showPerPage = 6;
       var numberOfItems = data.length;
-      var totalPages = Math.round(numberOfItems / showPerPage);
+      var totalPages = Math.round(numberOfItems / showPerPage) + 1;
       var nextBtn = $('.ig-next');
       var prevBtn = $('.ig-back');
 
