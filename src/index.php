@@ -263,10 +263,33 @@
 
       <section id="projects">
         <h2 class="lines"><span>Projects</span></h2>
+        <div class="project-wrapper">
+          <div class="project">
+            <div class="project__image">
+              <a href="https://github.com/drewrawitz/jQuery-Floating-Form-Label"><img src="assets/images/projects/img_floating-labels.jpg"></a>
+            </div>
+            <div class="project__info">
+              <h3>jQuery Floating Form Label</h3>
+              <p>A jQuery Plugin to turn an input placeholder into a floated form label when selected or filled out.</p>
+              <p><a class="link" href="https://github.com/drewrawitz/jQuery-Floating-Form-Label" target="_blank">View On GitHub</a></p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image">
+              <a href="https://github.com/drewrawitz/jquery-fixed-header" target="_blank"><img src="assets/images/projects/img_fixed-header.jpg"></a>
+            </div>
+            <div class="project__info">
+              <h3>jQuery Fixed Header</h3>
+              <p>A jQuery Plugin for responsive websites to fix a header to the top of the window and pad down the content to the height of the bar.</p>
+              <p><a class="link" href="https://github.com/drewrawitz/jquery-fixed-header" target="_blank">View On GitHub</a></p>
+            </div>
+          </div>
+        </div>
+
         <p class="center">
           <a href="https://github.com/drewrawitz" target="_blank" class="btn btn-light">
             <i class="icon-github-circled"></i>
-            <span>View my GitHub page for my Open Source projects</span>
+            <span>See All Projects</span>
           </a>
         </p>
       </section>

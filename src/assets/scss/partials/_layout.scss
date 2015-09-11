@@ -528,3 +528,25 @@ blockquote {
       }
     }
 }
+
+.project-wrapper {
+  display: flex;
+  flex-row: row wrap;
+  justify-content: center;
+  margin: 50px 0 25px 0;
+
+  .project {
+    max-width: 250px;
+    margin-right: 30px;
+
+    &__image {
+      margin-bottom: 10px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+    }
+  }
+}
