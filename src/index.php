@@ -266,7 +266,7 @@
         <div class="project-wrapper">
           <div class="project">
             <div class="project__image">
-              <a href="https://github.com/drewrawitz/jQuery-Floating-Form-Label"><img src="assets/images/projects/img_floating-labels.jpg"></a>
+              <a href="https://github.com/drewrawitz/jQuery-Floating-Form-Label" target="_blank"><img src="assets/images/projects/img_floating-labels.jpg"></a>
             </div>
             <div class="project__info">
               <h3>jQuery Floating Form Label</h3>
