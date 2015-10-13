@@ -101,7 +101,7 @@
 
         <ul class="technologies">
           <li>
-            <span class="technologies-apple"></span>
+            <span class="icon-technologies-apple"></span>
             <div class="technologies-text">
               <span>
                 <h3>Apple</h3>
@@ -110,7 +110,7 @@
             </div>
           </li>
           <li>
-            <span class="technologies-html5"></span>
+            <span class="icon-technologies-html5"></span>
             <div class="technologies-text">
               <span>
                 <h3>HTML5</h3>
@@ -120,7 +120,7 @@
             </div>
           </li>
           <li>
-            <span class="technologies-css3"></span>
+            <span class="icon-technologies-css3"></span>
             <div class="technologies-text">
               <span>
                 <h3>CSS3</h3>
@@ -128,7 +128,16 @@
             </div>
           </li>
           <li>
-            <span class="technologies-jquery"></span>
+            <span class="icon-technologies-javascript"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Javascript</h3>
+                <p><a href="http://javascript.com" class="link" target="_blank">javascript.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-jquery"></span>
             <div class="technologies-text">
               <span>
                 <h3>Javascript /jQuery</h3>
@@ -137,17 +146,7 @@
             </div>
           </li>
           <li>
-            <span class="technologies-git"></span>
-            <div class="technologies-text">
-              <span>
-                <h3>Git</h3>
-                <p>Version Control System</p>
-                <p><a href="http://git-scm.com" class="link" target="_blank">git-scm.com</a></p>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="technologies-sass"></span>
+            <span class="icon-technologies-sass"></span>
             <div class="technologies-text">
               <span>
                 <h3>SASS</h3>
@@ -157,89 +156,37 @@
             </div>
           </li>
           <li>
-            <span class="technologies-yeoman"></span>
+            <span class="icon-technologies-terminal"></span>
             <div class="technologies-text">
               <span>
-                <h3>Yeoman</h3>
-                <p>Project Scaffolding</p>
-                <p><a href="http://yeoman.io/" class="link" target="_blank">yeoman.io</a></p>
+                <h3>iTerm2</h3>
+                <p>Command Line</p>
+                <p><a href="http://www.iterm2.com" class="link" target="_blank">iterm2.com</a></p>
               </span>
             </div>
           </li>
           <li>
-            <span class="technologies-bower"></span>
+            <span class="icon-technologies-vim"></span>
             <div class="technologies-text">
               <span>
-                <h3>Bower</h3>
-                <p>Front-end Package Manager</p>
-                <p><a href="http://bower.io/" class="link" target="_blank">bower.io</a></p>
+                <h3>Vim</h3>
+                <p>Text Editor</p>
+                <p><a href="http://www.vim.org" class="link" target="_blank">vim.org</a></p>
               </span>
             </div>
           </li>
           <li>
-            <span class="technologies-grunt"></span>
+            <span class="icon-technologies-tmux"></span>
             <div class="technologies-text">
               <span>
-                <h3>Grunt</h3>
-                <p>Javascript Task Runner</p>
-                <p><a href="http://gruntjs.com/" class="link" target="_blank">gruntjs.com</a></p>
+                <h3>Tmux</h3>
+                <p>Terminal Multiplexer</p>
+                <p><a href="https://tmux.github.io/" class="link" target="_blank">tmux.github.io</a></p>
               </span>
             </div>
           </li>
           <li>
-            <span class="technologies-gulp"></span>
-            <div class="technologies-text">
-              <span>
-                <h3>Gulp</h3>
-                <p>Streaming Build System</p>
-                <p><a href="http://gulpjs.com/" class="link" target="_blank">gulpjs.com</a></p>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="technologies-vagrant"></span>
-            <div class="technologies-text">
-              <span>
-                <h3>Vagrant</h3>
-                <p>Development environments</p>
-                <p><a href="http://vagrantup.com/" class="link" target="_blank">vagrantup.com</a></p>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="technologies-browsers"></span>
-            <div class="technologies-text">
-              <span>
-                <h3>Cross Browser Compatibility</h3>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="technologies-responsive"></span>
-            <div class="technologies-text">
-              <span>
-                <h3>Responsive Web Design</h3>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="technologies-php"></span>
-            <div class="technologies-text">
-              <span>
-                <h3>PHP</h3>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="technologies-mysql"></span>
-            <div class="technologies-text">
-              <span>
-                <h3>MySQL</h3>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="technologies-wordpress"></span>
+            <span class="icon-technologies-wordpress"></span>
             <div class="technologies-text">
               <span>
                 <h3>Wordpress</h3>
@@ -249,7 +196,99 @@
             </div>
           </li>
           <li>
-            <span class="technologies-magento"></span>
+            <span class="icon-technologies-git"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Git</h3>
+                <p>Version Control System</p>
+                <p><a href="http://git-scm.com" class="link" target="_blank">git-scm.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-yeoman"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Yeoman</h3>
+                <p>Project Scaffolding</p>
+                <p><a href="http://yeoman.io/" class="link" target="_blank">yeoman.io</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-bower"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Bower</h3>
+                <p>Front-end Package Manager</p>
+                <p><a href="http://bower.io/" class="link" target="_blank">bower.io</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-grunt"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Grunt</h3>
+                <p>Javascript Task Runner</p>
+                <p><a href="http://gruntjs.com/" class="link" target="_blank">gruntjs.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-gulp"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Gulp</h3>
+                <p>Streaming Build System</p>
+                <p><a href="http://gulpjs.com/" class="link" target="_blank">gulpjs.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-vagrant"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Vagrant</h3>
+                <p>Development environments</p>
+                <p><a href="http://vagrantup.com/" class="link" target="_blank">vagrantup.com</a></p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-browsers"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Cross Browser Compatibility</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-responsive"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>Responsive Web Design</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-php"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>PHP</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-mysql"></span>
+            <div class="technologies-text">
+              <span>
+                <h3>MySQL</h3>
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-technologies-magento"></span>
             <div class="technologies-text">
               <span>
                 <h3>Magento</h3>

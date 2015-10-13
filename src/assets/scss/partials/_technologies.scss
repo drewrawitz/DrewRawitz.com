@@ -1,102 +1,137 @@
-.technologies-apple {
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-technologies-apple {
+  background-image: url(../images/technologies-sprite.png);
+  background-position: -100px 0px;
+  width: 100px;
+  height: 100px;
+}
+.icon-technologies-bower {
+  background-image: url(../images/technologies-sprite.png);
+  background-position: -300px -100px;
+  width: 100px;
+  height: 100px;
+}
+.icon-technologies-browsers {
   background-image: url(../images/technologies-sprite.png);
   background-position: 0px -100px;
   width: 100px;
   height: 100px;
 }
-.technologies-bower {
+.icon-technologies-css3 {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -800px;
+  background-position: -100px -100px;
   width: 100px;
   height: 100px;
 }
-.technologies-browsers {
+.icon-technologies-git {
+  background-image: url(../images/technologies-sprite.png);
+  background-position: -200px 0px;
+  width: 100px;
+  height: 100px;
+}
+.icon-technologies-grunt {
+  background-image: url(../images/technologies-sprite.png);
+  background-position: -200px -100px;
+  width: 100px;
+  height: 100px;
+}
+.icon-technologies-gulp {
   background-image: url(../images/technologies-sprite.png);
   background-position: 0px -200px;
   width: 100px;
   height: 100px;
 }
-.technologies-css3 {
+.icon-technologies-html5 {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -300px;
+  background-position: -100px -200px;
   width: 100px;
   height: 100px;
 }
-.technologies-git {
+.icon-technologies-javascript {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -400px;
+  background-position: -200px -200px;
   width: 100px;
   height: 100px;
 }
-.technologies-grunt {
+.icon-technologies-jquery {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -500px;
+  background-position: -300px 0px;
   width: 100px;
   height: 100px;
 }
-.technologies-gulp {
-  background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -600px;
-  width: 100px;
-  height: 100px;
-}
-.technologies-html5 {
-  background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -700px;
-  width: 100px;
-  height: 100px;
-}
-.technologies-jquery {
+.icon-technologies-magento {
   background-image: url(../images/technologies-sprite.png);
   background-position: 0px 0px;
   width: 100px;
   height: 100px;
 }
-.technologies-magento {
+.icon-technologies-mysql {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -900px;
+  background-position: -300px -200px;
   width: 100px;
   height: 100px;
 }
-.technologies-mysql {
+.icon-technologies-php {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -1000px;
+  background-position: 0px -300px;
   width: 100px;
   height: 100px;
 }
-.technologies-php {
+.icon-technologies-responsive {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -1100px;
+  background-position: -100px -300px;
   width: 100px;
   height: 100px;
 }
-.technologies-responsive {
+.icon-technologies-sass {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -1200px;
+  background-position: -200px -300px;
   width: 100px;
   height: 100px;
 }
-.technologies-sass {
+.icon-technologies-terminal {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -1300px;
+  background-position: -300px -300px;
   width: 100px;
   height: 100px;
 }
-.technologies-vagrant {
+.icon-technologies-tmux {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -1400px;
+  background-position: -400px 0px;
   width: 100px;
   height: 100px;
 }
-.technologies-wordpress {
+.icon-technologies-vagrant {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -1500px;
+  background-position: -400px -100px;
   width: 100px;
   height: 100px;
 }
-.technologies-yeoman {
+.icon-technologies-vim {
   background-image: url(../images/technologies-sprite.png);
-  background-position: 0px -1600px;
+  background-position: -400px -200px;
+  width: 100px;
+  height: 100px;
+}
+.icon-technologies-wordpress {
+  background-image: url(../images/technologies-sprite.png);
+  background-position: -400px -300px;
+  width: 100px;
+  height: 100px;
+}
+.icon-technologies-yeoman {
+  background-image: url(../images/technologies-sprite.png);
+  background-position: 0px -400px;
   width: 100px;
   height: 100px;
 }

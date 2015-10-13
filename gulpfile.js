@@ -132,10 +132,8 @@ gulp.task('sprite', function () {
     cssName: 'partials/_technologies.scss',
     cssFormat: 'css',
     imgPath: '../images/technologies-sprite.png',
-    cssOpts: {
-      cssClass: function (item) {
-        return '.technologies-' + item.name;
-      }
+    cssVarMap: function (sprite) {
+      sprite.name = 'technologies-' + sprite.name;
     }
   }));
   spriteData.img.pipe(gulp.dest(srcImages+'/'));
