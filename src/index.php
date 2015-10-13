@@ -140,7 +140,7 @@
             <span class="icon-technologies-jquery"></span>
             <div class="technologies-text">
               <span>
-                <h3>Javascript /jQuery</h3>
+                <h3>jQuery</h3>
                 <p><a href="http://jquery.com" class="link" target="_blank">jquery.com</a></p>
               </span>
             </div>
