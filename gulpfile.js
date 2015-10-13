@@ -53,6 +53,7 @@ function srcFiles(path) {
     path+'/libs/**',
     path+'/instagram/**/*',
     path+'/robots.txt',
+    path+'/resume.pdf',
     path+'/sitemap.xml'
   ];
 
