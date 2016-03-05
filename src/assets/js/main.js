@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    // Match Heights on Projects
+    $('.project .project__info > p').matchHeight();
+
+    // Instagram Feed
     $.getJSON('instagram/instagram.json', function(data) {
       var currentPage = 1;
       var showPerPage = 6;
