@@ -88,9 +88,9 @@ class InstagramFeed
 
       if(count($this->data_feed) < $count) :
         $this->data_feed[] = array(
-          'full_image' => $item->images->standard_resolution->url,
-          'thumbnail_image' => $item->images->thumbnail->url,
-          'base' => basename($item->images->standard_resolution->url),
+          'full_image' => strtok($item->images->standard_resolution->url, '?'),
+          'thumbnail_image' => strtok($item->images->thumbnail->url, '?'),
+          'base' => strtok(basename($item->images->standard_resolution->url), '?'),
           'description' => ($item->caption) ? $item->caption->text : ''
         );
       endif;
