@@ -568,10 +568,10 @@ blockquote {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         border: 1px solid #e4e4e4;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
 
         &:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
       }
     }
