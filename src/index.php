@@ -305,7 +305,7 @@
         <div class="project-wrapper">
           <div class="project">
             <div class="project__image">
-              <a href="https://github.com/drewrawitz/jQuery-Floating-Form-Label" target="_blank"><img src="assets/images/projects/img_wp-plugin.jpg"></a>
+              <a href="https://github.com/drewrawitz/wp-featured-image-notes" target="_blank"><img src="assets/images/projects/img_wp-plugin.jpg"></a>
             </div>
             <div class="project__info">
               <h3>Featured Image Notes</h3>
