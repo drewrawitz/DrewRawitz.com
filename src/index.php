@@ -85,8 +85,8 @@
 
       <section id="about">
         <h2 class="lines"><span>About Me</span></h2>
-        <p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work as a Front-End Developer for <a href="http://www.capstrat.com" class="link" target="_blank" rel="nofollow">Capstrat</a>, a strategic communications firm offering interactive, marketing communications, public affairs and public relations.</p>
-        <p>My job involves doing what I love, <strong>developing</strong> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="resume.pdf" target="_blank" class="link">resume</a>.</p>
+        <p>Hi, I am <strong>Drew Rawitz</strong>. I enjoy playing with cutting edge web technologies and building beautiful websites. I currently work as a Developer for <a href="http://www.sanbornmediafactory.com" class="link" target="_blank" rel="nofollow">Sanborn Media Factory</a>, an interactive creative agency based in NYC and LA focusing on producing digital campaigns and products focused on web, mobile, social, video and live experiences.</p>
+        <p>My job involves doing what I love, <strong>developing</strong> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my resume, which is available upon <a href="index.php#contact" data-target="#contact" class="link">request</a>.</p>
 
         <div class="clear-left"></div>
         <p class="center">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
