@@ -305,6 +305,16 @@
         <div class="project-wrapper">
           <div class="project">
             <div class="project__image">
+              <a href="https://github.com/drewrawitz/responsify" target="_blank"><img src="assets/images/projects/img_responsify.jpg"></a>
+            </div>
+            <div class="project__info">
+              <h3>Responsify</h3>
+              <p>A simple tool which allows you to test your responsive websites.</p>
+              <a class="button" href="https://github.com/drewrawitz/responsify" target="_blank">View On GitHub</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image">
               <a href="https://github.com/drewrawitz/wp-featured-image-notes" target="_blank"><img src="assets/images/projects/img_wp-plugin.jpg"></a>
             </div>
             <div class="project__info">
@@ -315,22 +325,22 @@
           </div>
           <div class="project">
             <div class="project__image">
-              <a href="https://github.com/drewrawitz/jQuery-Floating-Form-Label" target="_blank"><img src="assets/images/projects/img_floating-labels.jpg"></a>
-            </div>
-            <div class="project__info">
-              <h3>jQuery Floating Form Label</h3>
-              <p>A jQuery Plugin to turn an input placeholder into a floated form label when selected or filled out.</p>
-              <a class="button" href="https://github.com/drewrawitz/jQuery-Floating-Form-Label" target="_blank">View On GitHub</a>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project__image">
               <a href="https://github.com/drewrawitz/jquery-fixed-header" target="_blank"><img src="assets/images/projects/img_fixed-header.jpg"></a>
             </div>
             <div class="project__info">
               <h3>jQuery Fixed Header</h3>
               <p>A jQuery Plugin for responsive websites to fix a header to the top of the window and pad down the content to the height of the bar.</p>
               <a class="button" href="https://github.com/drewrawitz/jquery-fixed-header" target="_blank">View On GitHub</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image">
+              <a href="https://github.com/drewrawitz/jQuery-Floating-Form-Label" target="_blank"><img src="assets/images/projects/img_floating-labels.jpg"></a>
+            </div>
+            <div class="project__info">
+              <h3>jQuery Floating Form Label</h3>
+              <p>A jQuery Plugin to turn an input placeholder into a floated form label when selected or filled out.</p>
+              <a class="button" href="https://github.com/drewrawitz/jQuery-Floating-Form-Label" target="_blank">View On GitHub</a>
             </div>
           </div>
         </div>

@@ -545,13 +545,14 @@ blockquote {
 
 .project-wrapper {
   display: flex;
-  flex-row: row wrap;
   justify-content: center;
+  flex-flow: row wrap;
   margin: 50px 0 25px 0;
 
   .project {
     max-width: 250px;
-    margin-right: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
     &__image {
       line-height: 1;
