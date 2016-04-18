@@ -147,7 +147,6 @@ gulp.task('deploy', ['build'], function() {
     dest: secrets.servers.live.rsyncDest,
     ssh: true,
     recursive: true,
-    syncDest: true,
   }, function(error, stdout, stderr, cmd) {
     if(error) {
       console.log(error.message);
